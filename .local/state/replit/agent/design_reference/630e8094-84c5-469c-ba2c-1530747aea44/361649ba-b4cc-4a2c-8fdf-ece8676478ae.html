@@ -1,0 +1,877 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Harvest Food Bank - Find a Pantry</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                borderRadius: {
+                    lg: "var(--radius)",
+                    md: "calc(var(--radius) - 2px)",
+                    sm: "calc(var(--radius) - 4px)",
+                },
+                colors: {
+                    background: "var(--background)",
+                    foreground: "var(--foreground)",
+                    card: {
+                        DEFAULT: "var(--card)",
+                        foreground: "var(--card-foreground)",
+                    },
+                    popover: {
+                        DEFAULT: "var(--popover)",
+                        foreground: "var(--popover-foreground)",
+                    },
+                    primary: {
+                        DEFAULT: "var(--primary)",
+                        foreground: "var(--primary-foreground)",
+                    },
+                    secondary: {
+                        DEFAULT: "var(--secondary)",
+                        foreground: "var(--secondary-foreground)",
+                    },
+                    muted: {
+                        DEFAULT: "var(--muted)",
+                        foreground: "var(--muted-foreground)",
+                    },
+                    accent: {
+                        DEFAULT: "var(--accent)",
+                        foreground: "var(--accent-foreground)",
+                    },
+                    destructive: {
+                        DEFAULT: "var(--destructive)",
+                        foreground: "var(--destructive-foreground)",
+                    },
+                    border: "var(--border)",
+                    input: "var(--input)",
+                    ring: "var(--ring)",
+                },
+                fontFamily: {
+                    sans: ["Inter", "system-ui", "sans-serif"],
+                }
+            },
+        }
+    };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --background: hsl(0 0% 98%);
+            --foreground: hsl(240 10% 3.9%);
+            --card: hsl(0 0% 100%);
+            --card-foreground: hsl(240 10% 3.9%);
+            --popover: hsl(0 0% 100%);
+            --popover-foreground: hsl(240 10% 3.9%);
+            --primary: hsl(123 38% 35%);
+            --primary-foreground: hsl(0 0% 98%);
+            --secondary: hsl(33 100% 48%);
+            --secondary-foreground: hsl(0 0% 98%);
+            --muted: hsl(240 4.8% 95.9%);
+            --muted-foreground: hsl(240 3.8% 46.1%);
+            --accent: hsl(207 90% 54%);
+            --accent-foreground: hsl(0 0% 98%);
+            --destructive: hsl(0 84.2% 60.2%);
+            --destructive-foreground: hsl(0 0% 98%);
+            --border: hsl(240 5.9% 90%);
+            --input: hsl(240 5.9% 90%);
+            --ring: hsl(123 38% 35%);
+            --radius: 8px;
+        }
+
+        .leaflet-container {
+            height: 500px;
+            width: 100%;
+        }
+
+        .admin-view {
+            display: none;
+        }
+
+        .public-view {
+            display: block;
+        }
+
+        .view-public .admin-view {
+            display: none;
+        }
+
+        .view-public .public-view {
+            display: block;
+        }
+
+        .view-admin .admin-view {
+            display: block;
+        }
+
+        .view-admin .public-view {
+            display: none;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-background text-foreground view-public">
+    <!-- @COMPONENT: ViewToggle [Demo toggle between public and admin views] -->
+    <div class="fixed top-4 right-4 z-50 bg-card border border-border rounded-lg shadow-lg p-2">
+        <button id="toggleView" class="px-3 py-1 bg-primary text-primary-foreground rounded text-sm font-medium hover:bg-primary/90 transition-colors">
+            Switch to Admin View
+        </button>
+    </div>
+    <!-- @END_COMPONENT: ViewToggle -->
+
+    <!-- PUBLIC VIEW -->
+    <div class="public-view">
+        <!-- @COMPONENT: PublicHeader [Main header for community users] -->
+        <header class="bg-card border-b border-border shadow-sm">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center justify-between h-16">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
+                            <i class="fas fa-seedling text-primary-foreground text-lg"></i>
+                        </div>
+                        <div>
+                            <h1 class="text-xl font-bold text-foreground" data-bind="organization.name">Second Harvest Food Bank</h1>
+                            <p class="text-sm text-muted-foreground">Lehigh Valley</p>
+                        </div>
+                    </div>
+                    <nav class="hidden md:flex items-center space-x-6">
+                        <a href="#" class="text-muted-foreground hover:text-foreground transition-colors">About</a>
+                        <a href="#" class="text-muted-foreground hover:text-foreground transition-colors">Get Help</a>
+                        <a href="#" class="text-muted-foreground hover:text-foreground transition-colors">Volunteer</a>
+                        <a href="#" class="bg-secondary text-secondary-foreground px-4 py-2 rounded-md font-medium hover:bg-secondary/90 transition-colors">Donate</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!-- @END_COMPONENT: PublicHeader -->
+
+        <!-- @COMPONENT: HeroSection [Main call-to-action area] -->
+        <section class="bg-gradient-to-r from-primary to-primary/80 text-primary-foreground py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4">Find Food Assistance Near You</h1>
+                    <p class="text-xl mb-8 opacity-90">Locate food pantries and resources in the Lehigh Valley area</p>
+                    <div class="max-w-md mx-auto">
+                        <div class="relative">
+                            <input type="text" placeholder="Enter your address or zip code" class="w-full px-4 py-3 rounded-lg text-foreground bg-card border border-border focus:outline-none focus:ring-2 focus:ring-ring pr-12">
+                            <button class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-secondary text-secondary-foreground p-2 rounded-md hover:bg-secondary/90 transition-colors">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- @END_COMPONENT: HeroSection -->
+
+        <!-- @COMPONENT: MapAndFilters [Interactive map with search functionality] -->
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Filters Sidebar -->
+                <div class="lg:col-span-1">
+                    <div class="bg-card border border-border rounded-lg p-6 shadow-sm">
+                        <h3 class="text-lg font-semibold mb-4">Filter Pantries</h3>
+                        
+                        <div class="space-y-4">
+                            <div>
+                                <label class="block text-sm font-medium mb-2">Distance</label>
+                                <select class="w-full px-3 py-2 border border-border rounded-md bg-card focus:outline-none focus:ring-2 focus:ring-ring">
+                                    <option>Within 5 miles</option>
+                                    <option>Within 10 miles</option>
+                                    <option>Within 25 miles</option>
+                                    <option>Any distance</option>
+                                </select>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-sm font-medium mb-2">Availability</label>
+                                <div class="space-y-2">
+                                    <label class="flex items-center">
+                                        <input type="checkbox" class="rounded border-border text-primary focus:ring-ring">
+                                        <span class="ml-2 text-sm">Open today</span>
+                                    </label>
+                                    <label class="flex items-center">
+                                        <input type="checkbox" class="rounded border-border text-primary focus:ring-ring">
+                                        <span class="ml-2 text-sm">By appointment</span>
+                                    </label>
+                                    <label class="flex items-center">
+                                        <input type="checkbox" class="rounded border-border text-primary focus:ring-ring">
+                                        <span class="ml-2 text-sm">Walk-in welcome</span>
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-sm font-medium mb-2">Services</label>
+                                <div class="space-y-2">
+                                    <label class="flex items-center">
+                                        <input type="checkbox" class="rounded border-border text-primary focus:ring-ring">
+                                        <span class="ml-2 text-sm">Fresh produce</span>
+                                    </label>
+                                    <label class="flex items-center">
+                                        <input type="checkbox" class="rounded border-border text-primary focus:ring-ring">
+                                        <span class="ml-2 text-sm">Frozen items</span>
+                                    </label>
+                                    <label class="flex items-center">
+                                        <input type="checkbox" class="rounded border-border text-primary focus:ring-ring">
+                                        <span class="ml-2 text-sm">Baby formula</span>
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <button class="w-full bg-primary text-primary-foreground py-2 rounded-md hover:bg-primary/90 transition-colors">
+                                Apply Filters
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Results Summary -->
+                    <div class="mt-6 bg-card border border-border rounded-lg p-4 shadow-sm">
+                        <h4 class="font-medium mb-2">Search Results</h4>
+                        <p class="text-sm text-muted-foreground" data-bind="results.count">12 food pantries found within 10 miles</p>
+                    </div>
+                </div>
+
+                <!-- Map and Results -->
+                <div class="lg:col-span-2">
+                    <div class="bg-card border border-border rounded-lg shadow-sm overflow-hidden">
+                        <div class="p-4 border-b border-border">
+                            <div class="flex items-center justify-between">
+                                <h3 class="text-lg font-semibold">Food Pantry Locations</h3>
+                                <div class="flex space-x-2">
+                                    <button id="mapViewBtn" class="px-3 py-1 bg-primary text-primary-foreground rounded text-sm font-medium">Map</button>
+                                    <button id="listViewBtn" class="px-3 py-1 bg-muted text-muted-foreground rounded text-sm font-medium hover:bg-muted/80">List</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Map Container -->
+                        <div id="mapContainer" class="relative">
+                            <div id="map" class="leaflet-container"></div>
+                        </div>
+                        
+                        <!-- List View -->
+                        <div id="listContainer" class="hidden">
+                            <!-- @MAP: pantries.map(pantry => ( -->
+                            <div class="p-4 border-b border-border hover:bg-muted/30 transition-colors" data-mock="true">
+                                <div class="flex items-start justify-between">
+                                    <div class="flex-1">
+                                        <h4 class="font-semibold text-foreground" data-bind="pantry.name">The Freezer Ministry and Garden Gatherers</h4>
+                                        <p class="text-sm text-muted-foreground mt-1" data-bind="pantry.address">1830 Butztown Road, Bethlehem, 18017</p>
+                                        <p class="text-sm text-muted-foreground" data-bind="pantry.phone">📞 610-730-3929</p>
+                                        <div class="mt-2 flex items-center space-x-4">
+                                            <span class="text-xs bg-secondary/10 text-secondary px-2 py-1 rounded">By Appointment</span>
+                                            <span class="text-xs text-accent">1.2 miles away</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col space-y-2 ml-4">
+                                        <button class="px-3 py-1 bg-accent text-accent-foreground rounded text-sm hover:bg-accent/90 transition-colors">
+                                            <i class="fas fa-directions mr-1"></i>Directions
+                                        </button>
+                                        <button class="px-3 py-1 border border-border rounded text-sm hover:bg-muted transition-colors">
+                                            More Info
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- @END_MAP )) -->
+
+                            <!-- Additional pantry entries with data-mock="true" -->
+                            <div class="p-4 border-b border-border hover:bg-muted/30 transition-colors" data-mock="true">
+                                <div class="flex items-start justify-between">
+                                    <div class="flex-1">
+                                        <h4 class="font-semibold text-foreground">Bethlehem Emergency Shelter</h4>
+                                        <p class="text-sm text-muted-foreground mt-1">702 Hanover Ave, Allentown, 18103</p>
+                                        <p class="text-sm text-muted-foreground">📞 610-691-5723</p>
+                                        <div class="mt-2 flex items-center space-x-4">
+                                            <span class="text-xs bg-primary/10 text-primary px-2 py-1 rounded">Open Today</span>
+                                            <span class="text-xs text-accent">2.8 miles away</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col space-y-2 ml-4">
+                                        <button class="px-3 py-1 bg-accent text-accent-foreground rounded text-sm hover:bg-accent/90 transition-colors">
+                                            <i class="fas fa-directions mr-1"></i>Directions
+                                        </button>
+                                        <button class="px-3 py-1 border border-border rounded text-sm hover:bg-muted transition-colors">
+                                            More Info
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="p-4 border-b border-border hover:bg-muted/30 transition-colors" data-mock="true">
+                                <div class="flex items-start justify-between">
+                                    <div class="flex-1">
+                                        <h4 class="font-semibold text-foreground">Sacred Heart Catholic Church</h4>
+                                        <p class="text-sm text-muted-foreground mt-1">433 3rd St, Whitehall, 18052</p>
+                                        <p class="text-sm text-muted-foreground">📞 610-266-2626</p>
+                                        <div class="mt-2 flex items-center space-x-4">
+                                            <span class="text-xs bg-muted text-muted-foreground px-2 py-1 rounded">Closed Today</span>
+                                            <span class="text-xs text-accent">4.1 miles away</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col space-y-2 ml-4">
+                                        <button class="px-3 py-1 bg-accent text-accent-foreground rounded text-sm hover:bg-accent/90 transition-colors">
+                                            <i class="fas fa-directions mr-1"></i>Directions
+                                        </button>
+                                        <button class="px-3 py-1 border border-border rounded text-sm hover:bg-muted transition-colors">
+                                            More Info
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- @END_COMPONENT: MapAndFilters -->
+
+        <!-- @COMPONENT: QuickStats [Community impact statistics] -->
+        <section class="bg-muted py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-foreground mb-4">Community Impact</h2>
+                    <p class="text-muted-foreground">Together, we're fighting hunger in the Lehigh Valley</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-home text-primary-foreground text-2xl"></i>
+                        </div>
+                        <h3 class="text-3xl font-bold text-foreground" data-bind="stats.pantries">45</h3>
+                        <p class="text-muted-foreground">Food Pantries</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-users text-secondary-foreground text-2xl"></i>
+                        </div>
+                        <h3 class="text-3xl font-bold text-foreground" data-bind="stats.families">12,500</h3>
+                        <p class="text-muted-foreground">Families Served Monthly</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-apple-alt text-accent-foreground text-2xl"></i>
+                        </div>
+                        <h3 class="text-3xl font-bold text-foreground" data-bind="stats.meals">850K</h3>
+                        <p class="text-muted-foreground">Meals Distributed Annually</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- @END_COMPONENT: QuickStats -->
+
+        <!-- @COMPONENT: PublicFooter [Footer with resources and links] -->
+        <footer class="bg-card border-t border-border">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                    <div class="col-span-1 md:col-span-2">
+                        <div class="flex items-center space-x-3 mb-4">
+                            <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
+                                <i class="fas fa-seedling text-primary-foreground text-lg"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold">Second Harvest Food Bank</h3>
+                                <p class="text-sm text-muted-foreground">Lehigh Valley</p>
+                            </div>
+                        </div>
+                        <p class="text-muted-foreground mb-4">Fighting hunger and food insecurity in our community through partnerships, advocacy, and direct service.</p>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-muted-foreground hover:text-foreground"><i class="fab fa-facebook text-xl"></i></a>
+                            <a href="#" class="text-muted-foreground hover:text-foreground"><i class="fab fa-twitter text-xl"></i></a>
+                            <a href="#" class="text-muted-foreground hover:text-foreground"><i class="fab fa-instagram text-xl"></i></a>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold mb-4">Get Help</h4>
+                        <ul class="space-y-2 text-sm text-muted-foreground">
+                            <li><a href="#" class="hover:text-foreground">Find Food Pantries</a></li>
+                            <li><a href="#" class="hover:text-foreground">Emergency Food</a></li>
+                            <li><a href="#" class="hover:text-foreground">SNAP Benefits</a></li>
+                            <li><a href="#" class="hover:text-foreground">Mobile Food Pantry</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold mb-4">Get Involved</h4>
+                        <ul class="space-y-2 text-sm text-muted-foreground">
+                            <li><a href="#" class="hover:text-foreground">Volunteer</a></li>
+                            <li><a href="#" class="hover:text-foreground">Donate Food</a></li>
+                            <li><a href="#" class="hover:text-foreground">Host Food Drive</a></li>
+                            <li><a href="#" class="hover:text-foreground">Corporate Partners</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="border-t border-border mt-8 pt-8 text-center text-sm text-muted-foreground">
+                    <p>&copy; 2024 Second Harvest Food Bank of the Lehigh Valley. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+        <!-- @END_COMPONENT: PublicFooter -->
+    </div>
+
+    <!-- ADMIN VIEW -->
+    <div class="admin-view">
+        <!-- @COMPONENT: AdminHeader [Admin dashboard header with navigation] -->
+        <header class="bg-card border-b border-border shadow-sm">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center justify-between h-16">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
+                            <i class="fas fa-cog text-primary-foreground text-lg"></i>
+                        </div>
+                        <div>
+                            <h1 class="text-xl font-bold text-foreground">Admin Dashboard</h1>
+                            <p class="text-sm text-muted-foreground">Pantry Directory Management</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <button class="text-muted-foreground hover:text-foreground">
+                            <i class="fas fa-bell text-lg"></i>
+                        </button>
+                        <div class="flex items-center space-x-2">
+                            <div class="w-8 h-8 bg-muted rounded-full flex items-center justify-center">
+                                <i class="fas fa-user text-muted-foreground"></i>
+                            </div>
+                            <span class="text-sm font-medium" data-bind="admin.name">Admin User</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- @END_COMPONENT: AdminHeader -->
+
+        <!-- @COMPONENT: AdminSidebar [Navigation sidebar for admin functions] -->
+        <div class="flex h-screen bg-background">
+            <nav class="w-64 bg-card border-r border-border">
+                <div class="p-6">
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="#" class="flex items-center space-x-3 px-3 py-2 bg-primary text-primary-foreground rounded-md">
+                                <i class="fas fa-home"></i>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex items-center space-x-3 px-3 py-2 text-muted-foreground hover:bg-muted rounded-md">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Pantry Locations</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex items-center space-x-3 px-3 py-2 text-muted-foreground hover:bg-muted rounded-md">
+                                <i class="fas fa-upload"></i>
+                                <span>Data Import</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex items-center space-x-3 px-3 py-2 text-muted-foreground hover:bg-muted rounded-md">
+                                <i class="fas fa-palette"></i>
+                                <span>Branding</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex items-center space-x-3 px-3 py-2 text-muted-foreground hover:bg-muted rounded-md">
+                                <i class="fas fa-map"></i>
+                                <span>Map Settings</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex items-center space-x-3 px-3 py-2 text-muted-foreground hover:bg-muted rounded-md">
+                                <i class="fas fa-users"></i>
+                                <span>User Management</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex items-center space-x-3 px-3 py-2 text-muted-foreground hover:bg-muted rounded-md">
+                                <i class="fas fa-chart-bar"></i>
+                                <span>Analytics</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- @COMPONENT: AdminMainContent [Main admin dashboard content area] -->
+            <main class="flex-1 overflow-y-auto p-8">
+                <!-- Dashboard Overview -->
+                <div class="mb-8">
+                    <h2 class="text-2xl font-bold text-foreground mb-6">Dashboard Overview</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
+                        <div class="bg-card border border-border rounded-lg p-6">
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <p class="text-sm text-muted-foreground">Total Pantries</p>
+                                    <h3 class="text-2xl font-bold text-foreground" data-bind="dashboard.totalPantries">45</h3>
+                                </div>
+                                <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+                                    <i class="fas fa-home text-primary text-xl"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-card border border-border rounded-lg p-6">
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <p class="text-sm text-muted-foreground">Active Today</p>
+                                    <h3 class="text-2xl font-bold text-foreground" data-bind="dashboard.activeToday">32</h3>
+                                </div>
+                                <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+                                    <i class="fas fa-clock text-primary text-xl"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-card border border-border rounded-lg p-6">
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <p class="text-sm text-muted-foreground">Last Sync</p>
+                                    <h3 class="text-lg font-bold text-foreground" data-bind="dashboard.lastSync">2 hours ago</h3>
+                                </div>
+                                <div class="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center">
+                                    <i class="fas fa-sync text-secondary text-xl"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-card border border-border rounded-lg p-6">
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <p class="text-sm text-muted-foreground">Monthly Views</p>
+                                    <h3 class="text-2xl font-bold text-foreground" data-bind="dashboard.monthlyViews">8,423</h3>
+                                </div>
+                                <div class="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center">
+                                    <i class="fas fa-eye text-accent text-xl"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data Management Section -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <!-- @COMPONENT: DataImport [CSV and Google Sheets import functionality] -->
+                    <div class="bg-card border border-border rounded-lg p-6">
+                        <h3 class="text-lg font-semibold mb-4">Data Import</h3>
+                        <div class="space-y-4">
+                            <div class="border-2 border-dashed border-border rounded-lg p-6 text-center">
+                                <i class="fas fa-cloud-upload-alt text-3xl text-muted-foreground mb-4"></i>
+                                <p class="text-muted-foreground mb-4">Drag and drop CSV file or click to browse</p>
+                                <button class="bg-primary text-primary-foreground px-4 py-2 rounded-md hover:bg-primary/90 transition-colors">
+                                    Choose File
+                                </button>
+                                <!-- @FUNCTIONALITY: File upload should validate CSV format and parse pantry data -->
+                            </div>
+                            
+                            <div class="border border-border rounded-lg p-4">
+                                <h4 class="font-medium mb-2">Google Sheets Integration</h4>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center space-x-3">
+                                        <i class="fab fa-google text-accent text-xl"></i>
+                                        <div>
+                                            <p class="text-sm font-medium">Pantry Database</p>
+                                            <p class="text-xs text-muted-foreground" data-bind="googleSheets.lastSync">Last sync: 2 hours ago</p>
+                                        </div>
+                                    </div>
+                                    <button class="bg-accent text-accent-foreground px-3 py-1 rounded text-sm hover:bg-accent/90 transition-colors">
+                                        Sync Now
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="border border-border rounded-lg p-4">
+                                <h4 class="font-medium mb-2">SharePoint Integration</h4>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center space-x-3">
+                                        <i class="fas fa-server text-primary text-xl"></i>
+                                        <div>
+                                            <p class="text-sm font-medium">Connected</p>
+                                            <p class="text-xs text-muted-foreground" data-bind="sharepoint.status">Status: Active</p>
+                                        </div>
+                                    </div>
+                                    <button class="bg-primary text-primary-foreground px-3 py-1 rounded text-sm hover:bg-primary/90 transition-colors">
+                                        Configure
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- @END_COMPONENT: DataImport -->
+
+                    <!-- @COMPONENT: WhiteLabeling [Customization options for branding] -->
+                    <div class="bg-card border border-border rounded-lg p-6">
+                        <h3 class="text-lg font-semibold mb-4">Branding & Customization</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <label class="block text-sm font-medium mb-2">Organization Name</label>
+                                <input type="text" value="Second Harvest Food Bank" class="w-full px-3 py-2 border border-border rounded-md bg-card focus:outline-none focus:ring-2 focus:ring-ring" data-bind="branding.orgName">
+                            </div>
+                            
+                            <div>
+                                <label class="block text-sm font-medium mb-2">Tagline</label>
+                                <input type="text" value="Lehigh Valley" class="w-full px-3 py-2 border border-border rounded-md bg-card focus:outline-none focus:ring-2 focus:ring-ring" data-bind="branding.tagline">
+                            </div>
+                            
+                            <div>
+                                <label class="block text-sm font-medium mb-2">Primary Color</label>
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-10 h-10 bg-primary rounded border border-border"></div>
+                                    <input type="text" value="#2E7D32" class="flex-1 px-3 py-2 border border-border rounded-md bg-card focus:outline-none focus:ring-2 focus:ring-ring" data-bind="branding.primaryColor">
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-sm font-medium mb-2">Default Map Center</label>
+                                <div class="grid grid-cols-2 gap-3">
+                                    <input type="text" placeholder="Latitude" value="40.6023" class="px-3 py-2 border border-border rounded-md bg-card focus:outline-none focus:ring-2 focus:ring-ring" data-bind="map.centerLat">
+                                    <input type="text" placeholder="Longitude" value="-75.4714" class="px-3 py-2 border border-border rounded-md bg-card focus:outline-none focus:ring-2 focus:ring-ring" data-bind="map.centerLng">
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-sm font-medium mb-2">Map Style</label>
+                                <select class="w-full px-3 py-2 border border-border rounded-md bg-card focus:outline-none focus:ring-2 focus:ring-ring" data-bind="map.style">
+                                    <option>Street Map</option>
+                                    <option>Satellite</option>
+                                    <option>Terrain</option>
+                                    <option>Dark Mode</option>
+                                </select>
+                            </div>
+                            
+                            <button class="w-full bg-primary text-primary-foreground py-2 rounded-md hover:bg-primary/90 transition-colors">
+                                Save Changes
+                            </button>
+                        </div>
+                    </div>
+                    <!-- @END_COMPONENT: WhiteLabeling -->
+                </div>
+
+                <!-- @COMPONENT: PantryManagement [List and edit pantry information] -->
+                <div class="mt-8">
+                    <div class="bg-card border border-border rounded-lg">
+                        <div class="p-6 border-b border-border">
+                            <div class="flex items-center justify-between">
+                                <h3 class="text-lg font-semibold">Manage Pantries</h3>
+                                <div class="flex items-center space-x-3">
+                                    <button class="bg-secondary text-secondary-foreground px-4 py-2 rounded-md hover:bg-secondary/90 transition-colors">
+                                        <i class="fas fa-plus mr-2"></i>Add Pantry
+                                    </button>
+                                    <button class="border border-border px-4 py-2 rounded-md hover:bg-muted transition-colors">
+                                        <i class="fas fa-download mr-2"></i>Export
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="p-6">
+                            <div class="mb-4">
+                                <input type="text" placeholder="Search pantries..." class="w-full px-4 py-2 border border-border rounded-md bg-card focus:outline-none focus:ring-2 focus:ring-ring">
+                            </div>
+                            
+                            <div class="overflow-x-auto">
+                                <table class="w-full">
+                                    <thead>
+                                        <tr class="border-b border-border">
+                                            <th class="text-left py-3 px-4 font-medium text-muted-foreground">Name</th>
+                                            <th class="text-left py-3 px-4 font-medium text-muted-foreground">Address</th>
+                                            <th class="text-left py-3 px-4 font-medium text-muted-foreground">Phone</th>
+                                            <th class="text-left py-3 px-4 font-medium text-muted-foreground">Status</th>
+                                            <th class="text-left py-3 px-4 font-medium text-muted-foreground">Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <!-- @MAP: pantries.map(pantry => ( -->
+                                        <tr class="border-b border-border hover:bg-muted/30" data-mock="true">
+                                            <td class="py-3 px-4">
+                                                <div class="font-medium" data-bind="pantry.name">The Freezer Ministry and Garden Gatherers</div>
+                                            </td>
+                                            <td class="py-3 px-4 text-muted-foreground" data-bind="pantry.address">1830 Butztown Road, Bethlehem, 18017</td>
+                                            <td class="py-3 px-4 text-muted-foreground" data-bind="pantry.phone">610-730-3929</td>
+                                            <td class="py-3 px-4">
+                                                <span class="px-2 py-1 text-xs bg-primary/10 text-primary rounded">Active</span>
+                                            </td>
+                                            <td class="py-3 px-4">
+                                                <div class="flex items-center space-x-2">
+                                                    <button class="text-accent hover:text-accent/80">
+                                                        <i class="fas fa-edit"></i>
+                                                    </button>
+                                                    <button class="text-destructive hover:text-destructive/80">
+                                                        <i class="fas fa-trash"></i>
+                                                    </button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <!-- @END_MAP )) -->
+                                        
+                                        <tr class="border-b border-border hover:bg-muted/30" data-mock="true">
+                                            <td class="py-3 px-4">
+                                                <div class="font-medium">Bethlehem Emergency Shelter</div>
+                                            </td>
+                                            <td class="py-3 px-4 text-muted-foreground">702 Hanover Ave, Allentown, 18103</td>
+                                            <td class="py-3 px-4 text-muted-foreground">610-691-5723</td>
+                                            <td class="py-3 px-4">
+                                                <span class="px-2 py-1 text-xs bg-primary/10 text-primary rounded">Active</span>
+                                            </td>
+                                            <td class="py-3 px-4">
+                                                <div class="flex items-center space-x-2">
+                                                    <button class="text-accent hover:text-accent/80">
+                                                        <i class="fas fa-edit"></i>
+                                                    </button>
+                                                    <button class="text-destructive hover:text-destructive/80">
+                                                        <i class="fas fa-trash"></i>
+                                                    </button>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr class="border-b border-border hover:bg-muted/30" data-mock="true">
+                                            <td class="py-3 px-4">
+                                                <div class="font-medium">Sacred Heart Catholic Church</div>
+                                            </td>
+                                            <td class="py-3 px-4 text-muted-foreground">433 3rd St, Whitehall, 18052</td>
+                                            <td class="py-3 px-4 text-muted-foreground">610-266-2626</td>
+                                            <td class="py-3 px-4">
+                                                <span class="px-2 py-1 text-xs bg-muted text-muted-foreground rounded">Inactive</span>
+                                            </td>
+                                            <td class="py-3 px-4">
+                                                <div class="flex items-center space-x-2">
+                                                    <button class="text-accent hover:text-accent/80">
+                                                        <i class="fas fa-edit"></i>
+                                                    </button>
+                                                    <button class="text-destructive hover:text-destructive/80">
+                                                        <i class="fas fa-trash"></i>
+                                                    </button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- @END_COMPONENT: PantryManagement -->
+            </main>
+            <!-- @END_COMPONENT: AdminMainContent -->
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+        (function() {
+            // View Toggle
+            const toggleBtn = document.getElementById('toggleView');
+            const body = document.body;
+            
+            toggleBtn.addEventListener('click', function() {
+                if (body.classList.contains('view-public')) {
+                    body.classList.remove('view-public');
+                    body.classList.add('view-admin');
+                    toggleBtn.textContent = 'Switch to Public View';
+                } else {
+                    body.classList.remove('view-admin');
+                    body.classList.add('view-public');
+                    toggleBtn.textContent = 'Switch to Admin View';
+                }
+            });
+
+            // Map initialization
+            const map = L.map('map').setView([40.6023, -75.4714], 11);
+            
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '© OpenStreetMap contributors'
+            }).addTo(map);
+
+            // Sample markers for food pantries
+            const pantries = [
+                {
+                    name: "The Freezer Ministry and Garden Gatherers",
+                    lat: 40.6176,
+                    lng: -75.3652,
+                    address: "1830 Butztown Road, Bethlehem, 18017",
+                    phone: "610-730-3929",
+                    status: "By Appointment"
+                },
+                {
+                    name: "Bethlehem Emergency Shelter", 
+                    lat: 40.5987,
+                    lng: -75.4849,
+                    address: "702 Hanover Ave, Allentown, 18103",
+                    phone: "610-691-5723", 
+                    status: "Open Today"
+                },
+                {
+                    name: "Sacred Heart Catholic Church",
+                    lat: 40.6789,
+                    lng: -75.4926,
+                    address: "433 3rd St, Whitehall, 18052",
+                    phone: "610-266-2626",
+                    status: "Closed Today"
+                }
+            ];
+
+            // Add markers to map
+            pantries.forEach(pantry => {
+                const marker = L.marker([pantry.lat, pantry.lng]).addTo(map);
+                marker.bindPopup(`
+                    <div class="p-2">
+                        <h4 class="font-semibold">${pantry.name}</h4>
+                        <p class="text-sm text-gray-600 mt-1">${pantry.address}</p>
+                        <p class="text-sm text-gray-600">📞 ${pantry.phone}</p>
+                        <div class="mt-2">
+                            <span class="text-xs px-2 py-1 bg-blue-100 text-blue-800 rounded">${pantry.status}</span>
+                        </div>
+                        <div class="mt-2 flex space-x-2">
+                            <button class="text-xs bg-blue-500 text-white px-2 py-1 rounded hover:bg-blue-600">Directions</button>
+                            <button class="text-xs border border-gray-300 px-2 py-1 rounded hover:bg-gray-50">More Info</button>
+                        </div>
+                    </div>
+                `);
+            });
+
+            // Map/List view toggle
+            const mapViewBtn = document.getElementById('mapViewBtn');
+            const listViewBtn = document.getElementById('listViewBtn');
+            const mapContainer = document.getElementById('mapContainer');
+            const listContainer = document.getElementById('listContainer');
+
+            mapViewBtn.addEventListener('click', function() {
+                mapContainer.classList.remove('hidden');
+                listContainer.classList.add('hidden');
+                mapViewBtn.classList.add('bg-primary', 'text-primary-foreground');
+                mapViewBtn.classList.remove('bg-muted', 'text-muted-foreground');
+                listViewBtn.classList.remove('bg-primary', 'text-primary-foreground');
+                listViewBtn.classList.add('bg-muted', 'text-muted-foreground');
+                
+                // Refresh map size
+                setTimeout(() => map.invalidateSize(), 100);
+            });
+
+            listViewBtn.addEventListener('click', function() {
+                listContainer.classList.remove('hidden');
+                mapContainer.classList.add('hidden');
+                listViewBtn.classList.add('bg-primary', 'text-primary-foreground');
+                listViewBtn.classList.remove('bg-muted', 'text-muted-foreground');
+                mapViewBtn.classList.remove('bg-primary', 'text-primary-foreground');
+                mapViewBtn.classList.add('bg-muted', 'text-muted-foreground');
+            });
+
+            // TODO: Implement business logic for:
+            // - Form submissions and validation
+            // - API calls for data synchronization
+            // - CSV file parsing and import
+            // - Google Sheets API integration
+            // - SharePoint authentication and sync
+            // - Real-time pantry data updates
+            // - Geocoding for address validation
+            // - Directions API integration
+            // - Search and filter functionality
+            // - User authentication and session management
+        })();
+    </script>
+</body>
+</html>

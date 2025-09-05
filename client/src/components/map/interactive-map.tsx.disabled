@@ -1,0 +1,148 @@
+import { useEffect, useRef } from "react";
+import { MapContainer, TileLayer, Marker, Popup, useMap } from "react-leaflet";
+import { LatLngTuple } from "leaflet";
+import { Pantry } from "@shared/schema";
+import "leaflet/dist/leaflet.css";
+
+// Fix for default markers in React Leaflet
+import L from 'leaflet';
+import markerIcon2x from 'leaflet/dist/images/marker-icon-2x.png';
+import markerIcon from 'leaflet/dist/images/marker-icon.png';
+import markerShadow from 'leaflet/dist/images/marker-shadow.png';
+
+delete (L.Icon.Default.prototype as any)._getIconUrl;
+L.Icon.Default.mergeOptions({
+  iconUrl: markerIcon,
+  iconRetinaUrl: markerIcon2x,
+  shadowUrl: markerShadow,
+});
+
+interface InteractiveMapProps {
+  pantries: Pantry[];
+  center: LatLngTuple;
+  onPantrySelect: (pantry: Pantry) => void;
+  selectedPantry?: Pantry | null;
+}
+
+// Component to update map center when it changes
+function ChangeView({ center }: { center: LatLngTuple }) {
+  const map = useMap();
+  
+  useEffect(() => {
+    map.setView(center, map.getZoom());
+  }, [center, map]);
+  
+  return null;
+}
+
+export default function InteractiveMap({ 
+  pantries, 
+  center, 
+  onPantrySelect, 
+  selectedPantry 
+}: InteractiveMapProps) {
+  const mapRef = useRef<L.Map | null>(null);
+
+  // Custom icon for selected pantry
+  const selectedIcon = new L.Icon({
+    iconUrl: markerIcon,
+    iconRetinaUrl: markerIcon2x,
+    shadowUrl: markerShadow,
+    iconSize: [32, 52],
+    iconAnchor: [16, 52],
+    popupAnchor: [0, -52],
+    shadowSize: [52, 52],
+    shadowAnchor: [16, 52],
+    className: 'selected-marker'
+  });
+
+  const regularIcon = new L.Icon({
+    iconUrl: markerIcon,
+    iconRetinaUrl: markerIcon2x,
+    shadowUrl: markerShadow,
+    iconSize: [25, 41],
+    iconAnchor: [12, 41],
+    popupAnchor: [0, -41],
+    shadowSize: [41, 41],
+    shadowAnchor: [12, 41],
+  });
+
+  return (
+    <div className="hidden md:flex flex-1 relative">
+      <div className="w-full h-full" data-testid="map-container">
+        <MapContainer
+          center={center}
+          zoom={12}
+          className="w-full h-full"
+          ref={mapRef}
+        >
+          <ChangeView center={center} />
+          <TileLayer
+            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          />
+          
+          {pantries.map((pantry) => {
+            if (!pantry.latitude || !pantry.longitude) return null;
+            
+            const position: LatLngTuple = [
+              parseFloat(pantry.latitude),
+              parseFloat(pantry.longitude)
+            ];
+            
+            const isSelected = selectedPantry?.id === pantry.id;
+            
+            return (
+              <Marker
+                key={pantry.id}
+                position={position}
+                icon={isSelected ? selectedIcon : regularIcon}
+                eventHandlers={{
+                  click: () => onPantrySelect(pantry)
+                }}
+              >
+                <Popup>
+                  <div className="min-w-[200px]">
+                    <h3 className="font-semibold text-foreground mb-1">
+                      {pantry.name}
+                    </h3>
+                    <p className="text-sm text-muted-foreground mb-2">
+                      {pantry.address}<br />
+                      {pantry.city}, {pantry.state} {pantry.zipCode}
+                    </p>
+                    {pantry.phone && (
+                      <p className="text-sm text-muted-foreground mb-2">
+                        📞 {pantry.phone}
+                      </p>
+                    )}
+                    {pantry.accessType && (
+                      <div className="text-xs bg-primary/10 text-primary px-2 py-1 rounded-full inline-block">
+                        {pantry.accessType === 'walk-in' ? 'Walk-in' : 
+                         pantry.accessType === 'appointment' ? 'By Appointment' :
+                         pantry.accessType === 'mobile' ? 'Mobile Pantry' : 
+                         'Contact for Info'}
+                      </div>
+                    )}
+                  </div>
+                </Popup>
+              </Marker>
+            );
+          })}
+        </MapContainer>
+      </div>
+      
+      {/* Map placeholder for when no pantries are loaded */}
+      {pantries.length === 0 && (
+        <div className="absolute inset-0 flex items-center justify-center bg-muted/50">
+          <div className="bg-card rounded-lg p-6 shadow-lg text-center max-w-sm">
+            <div className="text-4xl text-primary mb-4">🗺️</div>
+            <h3 className="text-lg font-semibold text-foreground mb-2">Interactive Map</h3>
+            <p className="text-sm text-muted-foreground">
+              Food pantry locations will be displayed here with interactive markers.
+            </p>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}

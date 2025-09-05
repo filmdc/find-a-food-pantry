@@ -1,0 +1,955 @@
+The source list for the Content Security Policy directive 'default-src' contains an invalid source: ''unsafe-dynamic''. It will be ignored.
+The source list for the Content Security Policy directive 'default-src' contains an invalid source: ''unsafe-dynamic''. It will be ignored.
+The source list for the Content Security Policy directive 'default-src' contains an invalid source: ''unsafe-dynamic''. It will be ignored.
+The source list for the Content Security Policy directive 'default-src' contains an invalid source: ''unsafe-dynamic''. It will be ignored.
+The source list for the Content Security Policy directive 'default-src' contains an invalid source: ''unsafe-dynamic''. It will be ignored.
+The source list for the Content Security Policy directive 'default-src' contains an invalid source: ''unsafe-dynamic''. It will be ignored.
+The source list for the Content Security Policy directive 'default-src' contains an invalid source: ''unsafe-dynamic''. It will be ignored.
+The source list for the Content Security Policy directive 'default-src' contains an invalid source: ''unsafe-dynamic''. It will be ignored.
+The source list for the Content Security Policy directive 'default-src' contains an invalid source: ''unsafe-dynamic''. It will be ignored.
+The source list for the Content Security Policy directive 'default-src' contains an invalid source: ''unsafe-dynamic''. It will be ignored.
+The source list for the Content Security Policy directive 'default-src' contains an invalid source: ''unsafe-dynamic''. It will be ignored.
+The source list for the Content Security Policy directive 'default-src' contains an invalid source: ''unsafe-dynamic''. It will be ignored.
+The source list for the Content Security Policy directive 'default-src' contains an invalid source: ''unsafe-dynamic''. It will be ignored.
+The source list for the Content Security Policy directive 'default-src' contains an invalid source: ''unsafe-dynamic''. It will be ignored.
+The source list for the Content Security Policy directive 'default-src' contains an invalid source: ''unsafe-dynamic''. It will be ignored.
+The source list for the Content Security Policy directive 'default-src' contains an invalid source: ''unsafe-dynamic''. It will be ignored.
+The source list for the Content Security Policy directive 'default-src' contains an invalid source: ''unsafe-dynamic''. It will be ignored.
+The Content-Security-Policy directive 'default-src' contains 'report-uri' as a source expression. Did you want to add it as a directive and forget a semicolon?
+The Content-Security-Policy directive 'default-src' contains 'report-uri' as a source expression. Did you want to add it as a directive and forget a semicolon?
+The Content-Security-Policy directive 'default-src' contains 'report-uri' as a source expression. Did you want to add it as a directive and forget a semicolon?
+The Content-Security-Policy directive 'default-src' contains 'report-uri' as a source expression. Did you want to add it as a directive and forget a semicolon?
+The Content-Security-Policy directive 'default-src' contains 'report-uri' as a source expression. Did you want to add it as a directive and forget a semicolon?
+The Content-Security-Policy directive 'default-src' contains 'report-uri' as a source expression. Did you want to add it as a directive and forget a semicolon?
+The Content-Security-Policy directive 'default-src' contains 'report-uri' as a source expression. Did you want to add it as a directive and forget a semicolon?
+The Content-Security-Policy directive 'default-src' contains 'report-uri' as a source expression. Did you want to add it as a directive and forget a semicolon?
+The Content-Security-Policy directive 'default-src' contains 'report-uri' as a source expression. Did you want to add it as a directive and forget a semicolon?
+The Content-Security-Policy directive 'default-src' contains 'report-uri' as a source expression. Did you want to add it as a directive and forget a semicolon?
+The Content-Security-Policy directive 'default-src' contains 'report-uri' as a source expression. Did you want to add it as a directive and forget a semicolon?
+The Content-Security-Policy directive 'default-src' contains 'report-uri' as a source expression. Did you want to add it as a directive and forget a semicolon?
+The Content-Security-Policy directive 'default-src' contains 'report-uri' as a source expression. Did you want to add it as a directive and forget a semicolon?
+The Content-Security-Policy directive 'default-src' contains 'report-uri' as a source expression. Did you want to add it as a directive and forget a semicolon?
+The Content-Security-Policy directive 'default-src' contains 'report-uri' as a source expression. Did you want to add it as a directive and forget a semicolon?
+The Content-Security-Policy directive 'default-src' contains 'report-uri' as a source expression. Did you want to add it as a directive and forget a semicolon?
+The Content-Security-Policy directive 'default-src' contains 'report-uri' as a source expression. Did you want to add it as a directive and forget a semicolon?
+The source list for Content Security Policy directive 'default-src' contains a source with an invalid path: '/api/4509669501698048/security/?sentry_key=7eb3d90eb4660416caf507087367e67e'. The query component, including the '?', will be ignored.
+The source list for Content Security Policy directive 'default-src' contains a source with an invalid path: '/api/4509669501698048/security/?sentry_key=7eb3d90eb4660416caf507087367e67e'. The query component, including the '?', will be ignored.
+The source list for Content Security Policy directive 'default-src' contains a source with an invalid path: '/api/4509669501698048/security/?sentry_key=7eb3d90eb4660416caf507087367e67e'. The query component, including the '?', will be ignored.
+The source list for Content Security Policy directive 'default-src' contains a source with an invalid path: '/api/4509669501698048/security/?sentry_key=7eb3d90eb4660416caf507087367e67e'. The query component, including the '?', will be ignored.
+The source list for Content Security Policy directive 'default-src' contains a source with an invalid path: '/api/4509669501698048/security/?sentry_key=7eb3d90eb4660416caf507087367e67e'. The query component, including the '?', will be ignored.
+The source list for Content Security Policy directive 'default-src' contains a source with an invalid path: '/api/4509669501698048/security/?sentry_key=7eb3d90eb4660416caf507087367e67e'. The query component, including the '?', will be ignored.
+The source list for Content Security Policy directive 'default-src' contains a source with an invalid path: '/api/4509669501698048/security/?sentry_key=7eb3d90eb4660416caf507087367e67e'. The query component, including the '?', will be ignored.
+The source list for Content Security Policy directive 'default-src' contains a source with an invalid path: '/api/4509669501698048/security/?sentry_key=7eb3d90eb4660416caf507087367e67e'. The query component, including the '?', will be ignored.
+The source list for Content Security Policy directive 'default-src' contains a source with an invalid path: '/api/4509669501698048/security/?sentry_key=7eb3d90eb4660416caf507087367e67e'. The query component, including the '?', will be ignored.
+The source list for Content Security Policy directive 'default-src' contains a source with an invalid path: '/api/4509669501698048/security/?sentry_key=7eb3d90eb4660416caf507087367e67e'. The query component, including the '?', will be ignored.
+The source list for Content Security Policy directive 'default-src' contains a source with an invalid path: '/api/4509669501698048/security/?sentry_key=7eb3d90eb4660416caf507087367e67e'. The query component, including the '?', will be ignored.
+The source list for Content Security Policy directive 'default-src' contains a source with an invalid path: '/api/4509669501698048/security/?sentry_key=7eb3d90eb4660416caf507087367e67e'. The query component, including the '?', will be ignored.
+The source list for Content Security Policy directive 'default-src' contains a source with an invalid path: '/api/4509669501698048/security/?sentry_key=7eb3d90eb4660416caf507087367e67e'. The query component, including the '?', will be ignored.
+The source list for Content Security Policy directive 'default-src' contains a source with an invalid path: '/api/4509669501698048/security/?sentry_key=7eb3d90eb4660416caf507087367e67e'. The query component, including the '?', will be ignored.
+The source list for Content Security Policy directive 'default-src' contains a source with an invalid path: '/api/4509669501698048/security/?sentry_key=7eb3d90eb4660416caf507087367e67e'. The query component, including the '?', will be ignored.
+The source list for Content Security Policy directive 'default-src' contains a source with an invalid path: '/api/4509669501698048/security/?sentry_key=7eb3d90eb4660416caf507087367e67e'. The query component, including the '?', will be ignored.
+The source list for Content Security Policy directive 'default-src' contains a source with an invalid path: '/api/4509669501698048/security/?sentry_key=7eb3d90eb4660416caf507087367e67e'. The query component, including the '?', will be ignored.
+[NEW] Explain Console errors by using Copilot in Edge: click
+         
+         to explain an error. 
+        Learn more
+        Don't show again
+The source list for the Content Security Policy directive 'default-src' contains an invalid source: ''unsafe-dynamic''. It will be ignored.
+The Content-Security-Policy directive 'default-src' contains 'report-uri' as a source expression. Did you want to add it as a directive and forget a semicolon?
+The source list for Content Security Policy directive 'default-src' contains a source with an invalid path: '/api/4509669501698048/security/?sentry_key=7eb3d90eb4660416caf507087367e67e'. The query component, including the '?', will be ignored.
+PantryFinder:1  The source list for the Content Security Policy directive 'default-src' contains an invalid source: ''unsafe-dynamic''. It will be ignored.
+PantryFinder:1  The Content-Security-Policy directive 'default-src' contains 'report-uri' as a source expression. Did you want to add it as a directive and forget a semicolon?
+PantryFinder:1  The source list for Content Security Policy directive 'default-src' contains a source with an invalid path: '/api/4509669501698048/security/?sentry_key=7eb3d90eb4660416caf507087367e67e'. The query component, including the '?', will be ignored.
+_app-94c02147b67351f1.js:38 
+      /////////////////////
+   ///////////////////////////
+  ////////@@@@@@@//////////////
+  ////////@@@@@@@//////////////
+  ////////@@@@@@@//////////////        Curious and driven?
+  ///////////////@@@@@@@///////        Work with us!
+  ///////////////@@@@@@@///////
+  ///////////////@@@@@@@///////        https://join.replit.com/hack.with.us
+  ////////@@@@@@@//////////////
+  ////////@@@@@@@//////////////
+  ////////@@@@@@#//////////////
+   ///////////////////////////
+      /////////////////////
+      
+_app-94c02147b67351f1.js:38 [LaunchDarkly] LaunchDarkly client initialized
+Tracking Prevention blocked access to storage for <URL>.
+Tracking Prevention blocked access to storage for <URL>.
+Tracking Prevention blocked access to storage for <URL>.
+Tracking Prevention blocked access to storage for <URL>.
+Tracking Prevention blocked access to storage for <URL>.
+Tracking Prevention blocked access to storage for <URL>.
+Tracking Prevention blocked access to storage for <URL>.
+Tracking Prevention blocked access to storage for <URL>.
+Tracking Prevention blocked access to storage for <URL>.
+Tracking Prevention blocked access to storage for <URL>.
+Tracking Prevention blocked access to storage for <URL>.
+Tracking Prevention blocked access to storage for <URL>.
+Tracking Prevention blocked access to storage for <URL>.
+Tracking Prevention blocked access to storage for <URL>.
+Tracking Prevention blocked access to storage for <URL>.
+Tracking Prevention blocked access to storage for <URL>.
+Tracking Prevention blocked access to storage for <URL>.
+Tracking Prevention blocked access to storage for <URL>.
+Tracking Prevention blocked access to storage for <URL>.
+Tracking Prevention blocked access to storage for <URL>.
+Tracking Prevention blocked access to storage for <URL>.
+Tracking Prevention blocked access to storage for <URL>.
+Tracking Prevention blocked access to storage for <URL>.
+Tracking Prevention blocked access to storage for <URL>.
+Tracking Prevention blocked access to storage for <URL>.
+Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+framework-6e0dc3498a416b04.js:1  Unrecognized feature: 'ambient-light-sensor'.
+_ @ framework-6e0dc3498a416b04.js:1
+(anonymous) @ framework-6e0dc3498a416b04.js:1
+uD @ framework-6e0dc3498a416b04.js:1
+uI @ framework-6e0dc3498a416b04.js:1
+uM @ framework-6e0dc3498a416b04.js:1
+uS @ framework-6e0dc3498a416b04.js:1
+C @ framework-6e0dc3498a416b04.js:1
+z @ framework-6e0dc3498a416b04.js:1
+framework-6e0dc3498a416b04.js:1  Unrecognized feature: 'battery'.
+_ @ framework-6e0dc3498a416b04.js:1
+(anonymous) @ framework-6e0dc3498a416b04.js:1
+uD @ framework-6e0dc3498a416b04.js:1
+uI @ framework-6e0dc3498a416b04.js:1
+uM @ framework-6e0dc3498a416b04.js:1
+uS @ framework-6e0dc3498a416b04.js:1
+C @ framework-6e0dc3498a416b04.js:1
+z @ framework-6e0dc3498a416b04.js:1
+framework-6e0dc3498a416b04.js:1  Unrecognized feature: 'execution-while-not-rendered'.
+_ @ framework-6e0dc3498a416b04.js:1
+(anonymous) @ framework-6e0dc3498a416b04.js:1
+uD @ framework-6e0dc3498a416b04.js:1
+uI @ framework-6e0dc3498a416b04.js:1
+uM @ framework-6e0dc3498a416b04.js:1
+uS @ framework-6e0dc3498a416b04.js:1
+C @ framework-6e0dc3498a416b04.js:1
+z @ framework-6e0dc3498a416b04.js:1
+framework-6e0dc3498a416b04.js:1  Unrecognized feature: 'execution-while-out-of-viewport'.
+_ @ framework-6e0dc3498a416b04.js:1
+(anonymous) @ framework-6e0dc3498a416b04.js:1
+uD @ framework-6e0dc3498a416b04.js:1
+uI @ framework-6e0dc3498a416b04.js:1
+uM @ framework-6e0dc3498a416b04.js:1
+uS @ framework-6e0dc3498a416b04.js:1
+C @ framework-6e0dc3498a416b04.js:1
+z @ framework-6e0dc3498a416b04.js:1
+framework-6e0dc3498a416b04.js:1  Unrecognized feature: 'layout-animations'.
+_ @ framework-6e0dc3498a416b04.js:1
+(anonymous) @ framework-6e0dc3498a416b04.js:1
+uD @ framework-6e0dc3498a416b04.js:1
+uI @ framework-6e0dc3498a416b04.js:1
+uM @ framework-6e0dc3498a416b04.js:1
+uS @ framework-6e0dc3498a416b04.js:1
+C @ framework-6e0dc3498a416b04.js:1
+z @ framework-6e0dc3498a416b04.js:1
+framework-6e0dc3498a416b04.js:1  Unrecognized feature: 'legacy-image-formats'.
+_ @ framework-6e0dc3498a416b04.js:1
+(anonymous) @ framework-6e0dc3498a416b04.js:1
+uD @ framework-6e0dc3498a416b04.js:1
+uI @ framework-6e0dc3498a416b04.js:1
+uM @ framework-6e0dc3498a416b04.js:1
+uS @ framework-6e0dc3498a416b04.js:1
+C @ framework-6e0dc3498a416b04.js:1
+z @ framework-6e0dc3498a416b04.js:1
+framework-6e0dc3498a416b04.js:1  Unrecognized feature: 'navigation-override'.
+_ @ framework-6e0dc3498a416b04.js:1
+(anonymous) @ framework-6e0dc3498a416b04.js:1
+uD @ framework-6e0dc3498a416b04.js:1
+uI @ framework-6e0dc3498a416b04.js:1
+uM @ framework-6e0dc3498a416b04.js:1
+uS @ framework-6e0dc3498a416b04.js:1
+C @ framework-6e0dc3498a416b04.js:1
+z @ framework-6e0dc3498a416b04.js:1
+framework-6e0dc3498a416b04.js:1  Unrecognized feature: 'oversized-images'.
+_ @ framework-6e0dc3498a416b04.js:1
+(anonymous) @ framework-6e0dc3498a416b04.js:1
+uD @ framework-6e0dc3498a416b04.js:1
+uI @ framework-6e0dc3498a416b04.js:1
+uM @ framework-6e0dc3498a416b04.js:1
+uS @ framework-6e0dc3498a416b04.js:1
+C @ framework-6e0dc3498a416b04.js:1
+z @ framework-6e0dc3498a416b04.js:1
+framework-6e0dc3498a416b04.js:1  Unrecognized feature: 'publickey-credentials'.
+_ @ framework-6e0dc3498a416b04.js:1
+(anonymous) @ framework-6e0dc3498a416b04.js:1
+uD @ framework-6e0dc3498a416b04.js:1
+uI @ framework-6e0dc3498a416b04.js:1
+uM @ framework-6e0dc3498a416b04.js:1
+uS @ framework-6e0dc3498a416b04.js:1
+C @ framework-6e0dc3498a416b04.js:1
+z @ framework-6e0dc3498a416b04.js:1
+framework-6e0dc3498a416b04.js:1  Unrecognized feature: 'speaker-selection'.
+_ @ framework-6e0dc3498a416b04.js:1
+(anonymous) @ framework-6e0dc3498a416b04.js:1
+uD @ framework-6e0dc3498a416b04.js:1
+uI @ framework-6e0dc3498a416b04.js:1
+uM @ framework-6e0dc3498a416b04.js:1
+uS @ framework-6e0dc3498a416b04.js:1
+C @ framework-6e0dc3498a416b04.js:1
+z @ framework-6e0dc3498a416b04.js:1
+framework-6e0dc3498a416b04.js:1  Unrecognized feature: 'unoptimized-images'.
+_ @ framework-6e0dc3498a416b04.js:1
+(anonymous) @ framework-6e0dc3498a416b04.js:1
+uD @ framework-6e0dc3498a416b04.js:1
+uI @ framework-6e0dc3498a416b04.js:1
+uM @ framework-6e0dc3498a416b04.js:1
+uS @ framework-6e0dc3498a416b04.js:1
+C @ framework-6e0dc3498a416b04.js:1
+z @ framework-6e0dc3498a416b04.js:1
+framework-6e0dc3498a416b04.js:1  Unrecognized feature: 'unsized-media'.
+_ @ framework-6e0dc3498a416b04.js:1
+(anonymous) @ framework-6e0dc3498a416b04.js:1
+uD @ framework-6e0dc3498a416b04.js:1
+uI @ framework-6e0dc3498a416b04.js:1
+uM @ framework-6e0dc3498a416b04.js:1
+uS @ framework-6e0dc3498a416b04.js:1
+C @ framework-6e0dc3498a416b04.js:1
+z @ framework-6e0dc3498a416b04.js:1
+framework-6e0dc3498a416b04.js:1  Unrecognized feature: 'pointer-lock'.
+_ @ framework-6e0dc3498a416b04.js:1
+(anonymous) @ framework-6e0dc3498a416b04.js:1
+uD @ framework-6e0dc3498a416b04.js:1
+uI @ framework-6e0dc3498a416b04.js:1
+uM @ framework-6e0dc3498a416b04.js:1
+uS @ framework-6e0dc3498a416b04.js:1
+C @ framework-6e0dc3498a416b04.js:1
+z @ framework-6e0dc3498a416b04.js:1
+framework-6e0dc3498a416b04.js:1  Allow attribute will take precedence over 'allowfullscreen'.
+_ @ framework-6e0dc3498a416b04.js:1
+(anonymous) @ framework-6e0dc3498a416b04.js:1
+uD @ framework-6e0dc3498a416b04.js:1
+uI @ framework-6e0dc3498a416b04.js:1
+uM @ framework-6e0dc3498a416b04.js:1
+uS @ framework-6e0dc3498a416b04.js:1
+C @ framework-6e0dc3498a416b04.js:1
+z @ framework-6e0dc3498a416b04.js:1
+framework-6e0dc3498a416b04.js:1  Allow attribute will take precedence over 'allowpaymentrequest'.
+_ @ framework-6e0dc3498a416b04.js:1
+(anonymous) @ framework-6e0dc3498a416b04.js:1
+uD @ framework-6e0dc3498a416b04.js:1
+uI @ framework-6e0dc3498a416b04.js:1
+uM @ framework-6e0dc3498a416b04.js:1
+uS @ framework-6e0dc3498a416b04.js:1
+C @ framework-6e0dc3498a416b04.js:1
+z @ framework-6e0dc3498a416b04.js:1
+Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+Unrecognized feature: 'ambient-light-sensor'.
+Unrecognized feature: 'ambient-light-sensor'.
+Unrecognized feature: 'ambient-light-sensor'.
+Unrecognized feature: 'ambient-light-sensor'.
+Unrecognized feature: 'ambient-light-sensor'.
+Unrecognized feature: 'ambient-light-sensor'.
+Unrecognized feature: 'ambient-light-sensor'.
+Unrecognized feature: 'ambient-light-sensor'.
+Unrecognized feature: 'ambient-light-sensor'.
+Unrecognized feature: 'ambient-light-sensor'.
+Unrecognized feature: 'ambient-light-sensor'.
+Unrecognized feature: 'ambient-light-sensor'.
+Unrecognized feature: 'ambient-light-sensor'.
+Unrecognized feature: 'ambient-light-sensor'.
+Unrecognized feature: 'ambient-light-sensor'.
+Unrecognized feature: 'ambient-light-sensor'.
+Unrecognized feature: 'battery'.
+Unrecognized feature: 'battery'.
+Unrecognized feature: 'battery'.
+Unrecognized feature: 'battery'.
+Unrecognized feature: 'battery'.
+Unrecognized feature: 'battery'.
+Unrecognized feature: 'battery'.
+Unrecognized feature: 'battery'.
+Unrecognized feature: 'battery'.
+Unrecognized feature: 'battery'.
+Unrecognized feature: 'battery'.
+Unrecognized feature: 'battery'.
+Unrecognized feature: 'battery'.
+Unrecognized feature: 'battery'.
+Unrecognized feature: 'battery'.
+Unrecognized feature: 'battery'.
+Unrecognized feature: 'execution-while-not-rendered'.
+Unrecognized feature: 'execution-while-not-rendered'.
+Unrecognized feature: 'execution-while-not-rendered'.
+Unrecognized feature: 'execution-while-not-rendered'.
+Unrecognized feature: 'execution-while-not-rendered'.
+Unrecognized feature: 'execution-while-not-rendered'.
+Unrecognized feature: 'execution-while-not-rendered'.
+Unrecognized feature: 'execution-while-not-rendered'.
+Unrecognized feature: 'execution-while-not-rendered'.
+Unrecognized feature: 'execution-while-not-rendered'.
+Unrecognized feature: 'execution-while-not-rendered'.
+Unrecognized feature: 'execution-while-not-rendered'.
+Unrecognized feature: 'execution-while-not-rendered'.
+Unrecognized feature: 'execution-while-not-rendered'.
+Unrecognized feature: 'execution-while-not-rendered'.
+Unrecognized feature: 'execution-while-not-rendered'.
+Unrecognized feature: 'execution-while-out-of-viewport'.
+Unrecognized feature: 'execution-while-out-of-viewport'.
+Unrecognized feature: 'execution-while-out-of-viewport'.
+Unrecognized feature: 'execution-while-out-of-viewport'.
+Unrecognized feature: 'execution-while-out-of-viewport'.
+Unrecognized feature: 'execution-while-out-of-viewport'.
+Unrecognized feature: 'execution-while-out-of-viewport'.
+Unrecognized feature: 'execution-while-out-of-viewport'.
+Unrecognized feature: 'execution-while-out-of-viewport'.
+Unrecognized feature: 'execution-while-out-of-viewport'.
+Unrecognized feature: 'execution-while-out-of-viewport'.
+Unrecognized feature: 'execution-while-out-of-viewport'.
+Unrecognized feature: 'execution-while-out-of-viewport'.
+Unrecognized feature: 'execution-while-out-of-viewport'.
+Unrecognized feature: 'execution-while-out-of-viewport'.
+Unrecognized feature: 'execution-while-out-of-viewport'.
+Unrecognized feature: 'layout-animations'.
+Unrecognized feature: 'layout-animations'.
+Unrecognized feature: 'layout-animations'.
+Unrecognized feature: 'layout-animations'.
+Unrecognized feature: 'layout-animations'.
+Unrecognized feature: 'layout-animations'.
+Unrecognized feature: 'layout-animations'.
+Unrecognized feature: 'layout-animations'.
+Unrecognized feature: 'layout-animations'.
+Unrecognized feature: 'layout-animations'.
+Unrecognized feature: 'layout-animations'.
+Unrecognized feature: 'layout-animations'.
+Unrecognized feature: 'layout-animations'.
+Unrecognized feature: 'layout-animations'.
+Unrecognized feature: 'layout-animations'.
+Unrecognized feature: 'layout-animations'.
+Unrecognized feature: 'legacy-image-formats'.
+Unrecognized feature: 'legacy-image-formats'.
+Unrecognized feature: 'legacy-image-formats'.
+Unrecognized feature: 'legacy-image-formats'.
+Unrecognized feature: 'legacy-image-formats'.
+Unrecognized feature: 'legacy-image-formats'.
+Unrecognized feature: 'legacy-image-formats'.
+Unrecognized feature: 'legacy-image-formats'.
+Unrecognized feature: 'legacy-image-formats'.
+Unrecognized feature: 'legacy-image-formats'.
+Unrecognized feature: 'legacy-image-formats'.
+Unrecognized feature: 'legacy-image-formats'.
+Unrecognized feature: 'legacy-image-formats'.
+Unrecognized feature: 'legacy-image-formats'.
+Unrecognized feature: 'legacy-image-formats'.
+Unrecognized feature: 'legacy-image-formats'.
+Unrecognized feature: 'navigation-override'.
+Unrecognized feature: 'navigation-override'.
+Unrecognized feature: 'navigation-override'.
+Unrecognized feature: 'navigation-override'.
+Unrecognized feature: 'navigation-override'.
+Unrecognized feature: 'navigation-override'.
+Unrecognized feature: 'navigation-override'.
+Unrecognized feature: 'navigation-override'.
+Unrecognized feature: 'navigation-override'.
+Unrecognized feature: 'navigation-override'.
+Unrecognized feature: 'navigation-override'.
+Unrecognized feature: 'navigation-override'.
+Unrecognized feature: 'navigation-override'.
+Unrecognized feature: 'navigation-override'.
+Unrecognized feature: 'navigation-override'.
+Unrecognized feature: 'navigation-override'.
+Unrecognized feature: 'oversized-images'.
+Unrecognized feature: 'oversized-images'.
+Unrecognized feature: 'oversized-images'.
+Unrecognized feature: 'oversized-images'.
+Unrecognized feature: 'oversized-images'.
+Unrecognized feature: 'oversized-images'.
+Unrecognized feature: 'oversized-images'.
+Unrecognized feature: 'oversized-images'.
+Unrecognized feature: 'oversized-images'.
+Unrecognized feature: 'oversized-images'.
+Unrecognized feature: 'oversized-images'.
+Unrecognized feature: 'oversized-images'.
+Unrecognized feature: 'oversized-images'.
+Unrecognized feature: 'oversized-images'.
+Unrecognized feature: 'oversized-images'.
+Unrecognized feature: 'oversized-images'.
+Unrecognized feature: 'publickey-credentials'.
+Unrecognized feature: 'publickey-credentials'.
+Unrecognized feature: 'publickey-credentials'.
+Unrecognized feature: 'publickey-credentials'.
+Unrecognized feature: 'publickey-credentials'.
+Unrecognized feature: 'publickey-credentials'.
+Unrecognized feature: 'publickey-credentials'.
+Unrecognized feature: 'publickey-credentials'.
+Unrecognized feature: 'publickey-credentials'.
+Unrecognized feature: 'publickey-credentials'.
+Unrecognized feature: 'publickey-credentials'.
+Unrecognized feature: 'publickey-credentials'.
+Unrecognized feature: 'publickey-credentials'.
+Unrecognized feature: 'publickey-credentials'.
+Unrecognized feature: 'publickey-credentials'.
+Unrecognized feature: 'publickey-credentials'.
+Unrecognized feature: 'speaker-selection'.
+Unrecognized feature: 'speaker-selection'.
+Unrecognized feature: 'speaker-selection'.
+Unrecognized feature: 'speaker-selection'.
+Unrecognized feature: 'speaker-selection'.
+Unrecognized feature: 'speaker-selection'.
+Unrecognized feature: 'speaker-selection'.
+Unrecognized feature: 'speaker-selection'.
+Unrecognized feature: 'speaker-selection'.
+Unrecognized feature: 'speaker-selection'.
+Unrecognized feature: 'speaker-selection'.
+Unrecognized feature: 'speaker-selection'.
+Unrecognized feature: 'speaker-selection'.
+Unrecognized feature: 'speaker-selection'.
+Unrecognized feature: 'speaker-selection'.
+Unrecognized feature: 'speaker-selection'.
+Unrecognized feature: 'unoptimized-images'.
+Unrecognized feature: 'unoptimized-images'.
+Unrecognized feature: 'unoptimized-images'.
+Unrecognized feature: 'unoptimized-images'.
+Unrecognized feature: 'unoptimized-images'.
+Unrecognized feature: 'unoptimized-images'.
+Unrecognized feature: 'unoptimized-images'.
+Unrecognized feature: 'unoptimized-images'.
+Unrecognized feature: 'unoptimized-images'.
+Unrecognized feature: 'unoptimized-images'.
+Unrecognized feature: 'unoptimized-images'.
+Unrecognized feature: 'unoptimized-images'.
+Unrecognized feature: 'unoptimized-images'.
+Unrecognized feature: 'unoptimized-images'.
+Unrecognized feature: 'unoptimized-images'.
+Unrecognized feature: 'unoptimized-images'.
+Unrecognized feature: 'unsized-media'.
+Unrecognized feature: 'unsized-media'.
+Unrecognized feature: 'unsized-media'.
+Unrecognized feature: 'unsized-media'.
+Unrecognized feature: 'unsized-media'.
+Unrecognized feature: 'unsized-media'.
+Unrecognized feature: 'unsized-media'.
+Unrecognized feature: 'unsized-media'.
+Unrecognized feature: 'unsized-media'.
+Unrecognized feature: 'unsized-media'.
+Unrecognized feature: 'unsized-media'.
+Unrecognized feature: 'unsized-media'.
+Unrecognized feature: 'unsized-media'.
+Unrecognized feature: 'unsized-media'.
+Unrecognized feature: 'unsized-media'.
+Unrecognized feature: 'unsized-media'.
+Allow attribute will take precedence over 'allowfullscreen'.
+Allow attribute will take precedence over 'allowfullscreen'.
+Allow attribute will take precedence over 'allowfullscreen'.
+Allow attribute will take precedence over 'allowfullscreen'.
+Allow attribute will take precedence over 'allowfullscreen'.
+Allow attribute will take precedence over 'allowfullscreen'.
+Allow attribute will take precedence over 'allowfullscreen'.
+Allow attribute will take precedence over 'allowfullscreen'.
+Allow attribute will take precedence over 'allowfullscreen'.
+Allow attribute will take precedence over 'allowfullscreen'.
+Allow attribute will take precedence over 'allowfullscreen'.
+Allow attribute will take precedence over 'allowfullscreen'.
+Allow attribute will take precedence over 'allowfullscreen'.
+Allow attribute will take precedence over 'allowfullscreen'.
+Allow attribute will take precedence over 'allowfullscreen'.
+Allow attribute will take precedence over 'allowfullscreen'.
+Allow attribute will take precedence over 'allowpaymentrequest'.
+Allow attribute will take precedence over 'allowpaymentrequest'.
+Allow attribute will take precedence over 'allowpaymentrequest'.
+Allow attribute will take precedence over 'allowpaymentrequest'.
+Allow attribute will take precedence over 'allowpaymentrequest'.
+Allow attribute will take precedence over 'allowpaymentrequest'.
+Allow attribute will take precedence over 'allowpaymentrequest'.
+Allow attribute will take precedence over 'allowpaymentrequest'.
+Allow attribute will take precedence over 'allowpaymentrequest'.
+Allow attribute will take precedence over 'allowpaymentrequest'.
+Allow attribute will take precedence over 'allowpaymentrequest'.
+Allow attribute will take precedence over 'allowpaymentrequest'.
+Allow attribute will take precedence over 'allowpaymentrequest'.
+Allow attribute will take precedence over 'allowpaymentrequest'.
+Allow attribute will take precedence over 'allowpaymentrequest'.
+Allow attribute will take precedence over 'allowpaymentrequest'.
+PantryFinder:1 Banner not shown: beforeinstallpromptevent.preventDefault() called. The page must call beforeinstallpromptevent.prompt() to show the banner.
+eruda.js:2 PantryCard handleShowOnMap called The Freezer Ministry and Garden Gatherers onShowOnMap exists: true
+eruda.js:2 Calling onShowOnMap function
+eruda.js:2 SearchSidebar onShowOnMap triggered for: The Freezer Ministry and Garden Gatherers
+eruda.js:2 handleShowOnMap called in home.tsx The Freezer Ministry and Garden Gatherers
+eruda.js:2 Moving map to: The Freezer Ministry and Garden Gatherers at coordinates: 40.652881 -75.344869
+eruda.js:2 Map flying to: (2) [40.652881, -75.344869] from: (2) [40.6259, -75.3697]
+eruda.js:2 Moving map to: The Freezer Ministry and Garden Gatherers at coordinates: 40.652881 -75.344869
+eruda.js:2 Map flying to: (2) [40.652881, -75.344869] from: (2) [40.6259, -75.3697]
+eruda.js:2 Moving map to: INCARNATION OF OUR LORD SVDP at coordinates: 40.608629 -75.369549
+eruda.js:2 Map flying to: (2) [40.608629, -75.369549] from: (2) [40.652881, -75.344869]
+6e64dbd7-3ada-43f7-bc13-0107afc6ffcf-00-2pqhvymtw0387.picard.replit.dev/__replco/static/devtools/eruda/3.2.3/eruda.js:2 Moving map to: The Freezer Ministry and Garden Gatherers at coordinates: 40.652881 -75.344869
+6e64dbd7-3ada-43f7-bc13-0107afc6ffcf-00-2pqhvymtw0387.picard.replit.dev/__replco/static/devtools/eruda/3.2.3/eruda.js:2 Map flying to: (2) [40.652881, -75.344869] from: (2) [40.6259, -75.3697]
+6e64dbd7-3ada-43f7-bc13-0107afc6ffcf-00-2pqhvymtw0387.picard.replit.dev/__replco/static/devtools/eruda/3.2.3/eruda.js:2 Moving map to: The Freezer Ministry and Garden Gatherers at coordinates: 40.652881 -75.344869
+6e64dbd7-3ada-43f7-bc13-0107afc6ffcf-00-2pqhvymtw0387.picard.replit.dev/__replco/static/devtools/eruda/3.2.3/eruda.js:2 Moving map to: INCARNATION OF OUR LORD SVDP at coordinates: 40.608629 -75.369549
+6e64dbd7-3ada-43f7-bc13-0107afc6ffcf-00-2pqhvymtw0387.picard.replit.dev/__replco/static/devtools/eruda/3.2.3/eruda.js:2 Map flying to: (2) [40.608629, -75.369549] from: (2) [40.652881, -75.344869]
+6e64dbd7-3ada-43f7-bc13-0107afc6ffcf-00-2pqhvymtw0387.picard.replit.dev/__replco/static/devtools/eruda/3.2.3/eruda.js:2 Moving map to: The Freezer Ministry and Garden Gatherers at coordinates: 40.652881 -75.344869
+6e64dbd7-3ada-43f7-bc13-0107afc6ffcf-00-2pqhvymtw0387.picard.replit.dev/__replco/static/devtools/eruda/3.2.3/eruda.js:2 Map flying to: (2) [40.652881, -75.344869] from: (2) [40.608629, -75.369549]
+6e64dbd7-3ada-43f7-bc13-0107afc6ffcf-00-2pqhvymtw0387.picard.replit.dev/@vite/client:602   GET https://6e64dbd7-3ada-43f7-bc13-0107afc6ffcf-00-2pqhvymtw0387.picard.replit.dev/src/components/map/interactive-map.tsx?t=1757039214434 net::ERR_ABORTED 502 (Bad Gateway)
+importUpdatedModule @ 6e64dbd7-3ada-43f7-bc13-0107afc6ffcf-00-2pqhvymtw0387.picard.replit.dev/@vite/client:602
+fetchUpdate @ 6e64dbd7-3ada-43f7-bc13-0107afc6ffcf-00-2pqhvymtw0387.picard.replit.dev/@vite/client:211
+queueUpdate @ 6e64dbd7-3ada-43f7-bc13-0107afc6ffcf-00-2pqhvymtw0387.picard.replit.dev/@vite/client:186
+(anonymous) @ 6e64dbd7-3ada-43f7-bc13-0107afc6ffcf-00-2pqhvymtw0387.picard.replit.dev/@vite/client:642
+handleMessage @ 6e64dbd7-3ada-43f7-bc13-0107afc6ffcf-00-2pqhvymtw0387.picard.replit.dev/@vite/client:640
+(anonymous) @ 6e64dbd7-3ada-43f7-bc13-0107afc6ffcf-00-2pqhvymtw0387.picard.replit.dev/@vite/client:550
+6e64dbd7-3ada-43f7-bc13-0107afc6ffcf-00-2pqhvymtw0387.picard.replit.dev/@vite/client:602   GET https://6e64dbd7-3ada-43f7-bc13-0107afc6ffcf-00-2pqhvymtw0387.picard.replit.dev/src/index.css?t=1757039214434&v=TzryGAqxYwcXvcECZ2ggz net::ERR_ABORTED 502 (Bad Gateway)
+importUpdatedModule @ 6e64dbd7-3ada-43f7-bc13-0107afc6ffcf-00-2pqhvymtw0387.picard.replit.dev/@vite/client:602
+fetchUpdate @ 6e64dbd7-3ada-43f7-bc13-0107afc6ffcf-00-2pqhvymtw0387.picard.replit.dev/@vite/client:211
+queueUpdate @ 6e64dbd7-3ada-43f7-bc13-0107afc6ffcf-00-2pqhvymtw0387.picard.replit.dev/@vite/client:186
+(anonymous) @ 6e64dbd7-3ada-43f7-bc13-0107afc6ffcf-00-2pqhvymtw0387.picard.replit.dev/@vite/client:642
+handleMessage @ 6e64dbd7-3ada-43f7-bc13-0107afc6ffcf-00-2pqhvymtw0387.picard.replit.dev/@vite/client:640
+(anonymous) @ 6e64dbd7-3ada-43f7-bc13-0107afc6ffcf-00-2pqhvymtw0387.picard.replit.dev/@vite/client:550
+6e64dbd7-3ada-43f7-bc13-0107afc6ffcf-00-2pqhvymtw0387.picard.replit.dev/__replco/static/devtools/eruda/3.2.3/eruda.js:2 [vite] server connection lost. Polling for restart...
+6e64dbd7-3ada-43f7-bc13-0107afc6ffcf-00-2pqhvymtw0387.picard.replit.dev/__replco/static/devtools/eruda/3.2.3/eruda.js:2  [hmr] Failed to reload /src/components/map/interactive-map.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+Mt.forEach.n.<computed> @ 6e64dbd7-3ada-43f7-bc13-0107afc6ffcf-00-2pqhvymtw0387.picard.replit.dev/__replco/static/devtools/eruda/3.2.3/eruda.js:2
+warnFailedUpdate @ 6e64dbd7-3ada-43f7-bc13-0107afc6ffcf-00-2pqhvymtw0387.picard.replit.dev/@vite/client:176
+fetchUpdate @ 6e64dbd7-3ada-43f7-bc13-0107afc6ffcf-00-2pqhvymtw0387.picard.replit.dev/@vite/client:213
+await in fetchUpdate
+queueUpdate @ 6e64dbd7-3ada-43f7-bc13-0107afc6ffcf-00-2pqhvymtw0387.picard.replit.dev/@vite/client:186
+(anonymous) @ 6e64dbd7-3ada-43f7-bc13-0107afc6ffcf-00-2pqhvymtw0387.picard.replit.dev/@vite/client:642
+handleMessage @ 6e64dbd7-3ada-43f7-bc13-0107afc6ffcf-00-2pqhvymtw0387.picard.replit.dev/@vite/client:640
+(anonymous) @ 6e64dbd7-3ada-43f7-bc13-0107afc6ffcf-00-2pqhvymtw0387.picard.replit.dev/@vite/client:550
+6e64dbd7-3ada-43f7-bc13-0107afc6ffcf-00-2pqhvymtw0387.picard.replit.dev/__replco/static/devtools/eruda/3.2.3/eruda.js:2  [hmr] Failed to reload /src/index.css?v=TzryGAqxYwcXvcECZ2ggz. This could be due to syntax errors or importing non-existent modules. (see errors above)
+Mt.forEach.n.<computed> @ 6e64dbd7-3ada-43f7-bc13-0107afc6ffcf-00-2pqhvymtw0387.picard.replit.dev/__replco/static/devtools/eruda/3.2.3/eruda.js:2
+warnFailedUpdate @ 6e64dbd7-3ada-43f7-bc13-0107afc6ffcf-00-2pqhvymtw0387.picard.replit.dev/@vite/client:176
+fetchUpdate @ 6e64dbd7-3ada-43f7-bc13-0107afc6ffcf-00-2pqhvymtw0387.picard.replit.dev/@vite/client:213
+await in fetchUpdate
+queueUpdate @ 6e64dbd7-3ada-43f7-bc13-0107afc6ffcf-00-2pqhvymtw0387.picard.replit.dev/@vite/client:186
+(anonymous) @ 6e64dbd7-3ada-43f7-bc13-0107afc6ffcf-00-2pqhvymtw0387.picard.replit.dev/@vite/client:642
+handleMessage @ 6e64dbd7-3ada-43f7-bc13-0107afc6ffcf-00-2pqhvymtw0387.picard.replit.dev/@vite/client:640
+(anonymous) @ 6e64dbd7-3ada-43f7-bc13-0107afc6ffcf-00-2pqhvymtw0387.picard.replit.dev/@vite/client:550
+eruda.js:2 Moving map to: The Freezer Ministry and Garden Gatherers at coordinates: 40.652881 -75.344869
+eruda.js:2 [vite] server connection lost. Polling for restart...
+eruda.js:2 Moving map to: The Freezer Ministry and Garden Gatherers at coordinates: 40.652881 -75.344869
+eruda.js:2 Moving map to: The Freezer Ministry and Garden Gatherers at coordinates: 40.652881 -75.344869
+eruda.js:2 Moving map to: The Freezer Ministry and Garden Gatherers at coordinates: 40.652881 -75.344869
+eruda.js:2 Moving map to: The Freezer Ministry and Garden Gatherers at coordinates: 40.652881 -75.344869
+eruda.js:2 [vite] server connection lost. Polling for restart...
+eruda.js:2 Moving map to: The Freezer Ministry and Garden Gatherers at coordinates: 40.652881 -75.344869
+eruda.js:2 Map center changed from (2) [40.6259, -75.3697] to (2) [40.652881, -75.344869]
+eruda.js:2 Current zoom level: 9
+eruda.js:2 Flying to new location
+eruda.js:2 Moving map to: The Freezer Ministry and Garden Gatherers at coordinates: 40.652881 -75.344869
+eruda.js:2 Moving map to: The Freezer Ministry and Garden Gatherers at coordinates: 40.652881 -75.344869
+eruda.js:2 Map center changed from (2) [40.6259, -75.3697] to (2) [40.652881, -75.344869]
+eruda.js:2 Current zoom level: 9
+eruda.js:2 Flying to new location
+eruda.js:2 Moving map to: INCARNATION OF OUR LORD SVDP at coordinates: 40.608629 -75.369549
+eruda.js:2 Map center changed from (2) [40.652881, -75.344869] to (2) [40.608629, -75.369549]
+eruda.js:2 Current zoom level: 9
+eruda.js:2 Flying to new location
+eruda.js:2 Moving map to: The Freezer Ministry and Garden Gatherers at coordinates: 40.652881 -75.344869
+eruda.js:2 Map center changed from (2) [40.608629, -75.369549] to (2) [40.652881, -75.344869]
+6e64dbd7-3ada-43f7-bc13-0107afc6ffcf-00-2pqhvymtw0387.picard.replit.dev/__replco/static/devtools/eruda/3.2.3/eruda.js:2 Current zoom level: 9
+6e64dbd7-3ada-43f7-bc13-0107afc6ffcf-00-2pqhvymtw0387.picard.replit.dev/__replco/static/devtools/eruda/3.2.3/eruda.js:2 Flying to new location
+6e64dbd7-3ada-43f7-bc13-0107afc6ffcf-00-2pqhvymtw0387.picard.replit.dev/__replco/static/devtools/eruda/3.2.3/eruda.js:2 Moving map to: INCARNATION OF OUR LORD SVDP at coordinates: 40.608629 -75.369549
+eruda.js:2 Map center changed from (2) [40.652881, -75.344869] to (2) [40.608629, -75.369549]
+eruda.js:2 Current zoom level: 17
+eruda.js:2 Instantly switching to new location
+eruda.js:2 [vite] server connection lost. Polling for restart...
+(index):1  Access to fetch at 'https://api.openstreetmap.org/search?format=json&q=18017&limit=1' from origin 'https://6e64dbd7-3ada-43f7-bc13-0107afc6ffcf-00-2pqhvymtw0387.picard.replit.dev' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+(index):1  Access to fetch at 'https://api.openstreetmap.org/search?format=json&q=18017&limit=1' from origin 'https://6e64dbd7-3ada-43f7-bc13-0107afc6ffcf-00-2pqhvymtw0387.picard.replit.dev' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+(index):1  Access to fetch at 'https://api.openstreetmap.org/search?format=json&q=18017&limit=1' from origin 'https://6e64dbd7-3ada-43f7-bc13-0107afc6ffcf-00-2pqhvymtw0387.picard.replit.dev' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+eruda.js:2   GET https://api.openstreetmap.org/search?format=json&q=18017&limit=1 net::ERR_FAILED 301 (Moved Permanently)
+window.fetch @ eruda.js:2
+apply @ injected.js:253
+handleSearchSubmit @ search-sidebar.tsx:44
+callCallback2 @ chunk-WERSD76P.js?v=ba9d4355:3674
+invokeGuardedCallbackDev @ chunk-WERSD76P.js?v=ba9d4355:3699
+invokeGuardedCallback @ chunk-WERSD76P.js?v=ba9d4355:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-WERSD76P.js?v=ba9d4355:3736
+executeDispatch @ chunk-WERSD76P.js?v=ba9d4355:7014
+processDispatchQueueItemsInOrder @ chunk-WERSD76P.js?v=ba9d4355:7034
+processDispatchQueue @ chunk-WERSD76P.js?v=ba9d4355:7043
+dispatchEventsForPlugins @ chunk-WERSD76P.js?v=ba9d4355:7051
+(anonymous) @ chunk-WERSD76P.js?v=ba9d4355:7174
+batchedUpdates$1 @ chunk-WERSD76P.js?v=ba9d4355:18913
+batchedUpdates @ chunk-WERSD76P.js?v=ba9d4355:3579
+dispatchEventForPluginEventSystem @ chunk-WERSD76P.js?v=ba9d4355:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-WERSD76P.js?v=ba9d4355:5478
+dispatchEvent @ chunk-WERSD76P.js?v=ba9d4355:5472
+dispatchDiscreteEvent @ chunk-WERSD76P.js?v=ba9d4355:5449
+eruda.js:2   GET https://api.openstreetmap.org/search?format=json&q=18017&limit=1 net::ERR_FAILED 301 (Moved Permanently)
+window.fetch @ eruda.js:2
+apply @ injected.js:253
+handleSearchSubmit @ search-sidebar.tsx:44
+callCallback2 @ chunk-WERSD76P.js?v=ba9d4355:3674
+invokeGuardedCallbackDev @ chunk-WERSD76P.js?v=ba9d4355:3699
+invokeGuardedCallback @ chunk-WERSD76P.js?v=ba9d4355:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-WERSD76P.js?v=ba9d4355:3736
+executeDispatch @ chunk-WERSD76P.js?v=ba9d4355:7014
+processDispatchQueueItemsInOrder @ chunk-WERSD76P.js?v=ba9d4355:7034
+processDispatchQueue @ chunk-WERSD76P.js?v=ba9d4355:7043
+dispatchEventsForPlugins @ chunk-WERSD76P.js?v=ba9d4355:7051
+(anonymous) @ chunk-WERSD76P.js?v=ba9d4355:7174
+batchedUpdates$1 @ chunk-WERSD76P.js?v=ba9d4355:18913
+batchedUpdates @ chunk-WERSD76P.js?v=ba9d4355:3579
+dispatchEventForPluginEventSystem @ chunk-WERSD76P.js?v=ba9d4355:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-WERSD76P.js?v=ba9d4355:5478
+dispatchEvent @ chunk-WERSD76P.js?v=ba9d4355:5472
+dispatchDiscreteEvent @ chunk-WERSD76P.js?v=ba9d4355:5449
+eruda.js:2   GET https://api.openstreetmap.org/search?format=json&q=18017&limit=1 net::ERR_FAILED 301 (Moved Permanently)
+window.fetch @ eruda.js:2
+apply @ injected.js:253
+handleSearchSubmit @ search-sidebar.tsx:44
+callCallback2 @ chunk-WERSD76P.js?v=ba9d4355:3674
+invokeGuardedCallbackDev @ chunk-WERSD76P.js?v=ba9d4355:3699
+invokeGuardedCallback @ chunk-WERSD76P.js?v=ba9d4355:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-WERSD76P.js?v=ba9d4355:3736
+executeDispatch @ chunk-WERSD76P.js?v=ba9d4355:7014
+processDispatchQueueItemsInOrder @ chunk-WERSD76P.js?v=ba9d4355:7034
+processDispatchQueue @ chunk-WERSD76P.js?v=ba9d4355:7043
+dispatchEventsForPlugins @ chunk-WERSD76P.js?v=ba9d4355:7051
+(anonymous) @ chunk-WERSD76P.js?v=ba9d4355:7174
+batchedUpdates$1 @ chunk-WERSD76P.js?v=ba9d4355:18913
+batchedUpdates @ chunk-WERSD76P.js?v=ba9d4355:3579
+dispatchEventForPluginEventSystem @ chunk-WERSD76P.js?v=ba9d4355:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-WERSD76P.js?v=ba9d4355:5478
+dispatchEvent @ chunk-WERSD76P.js?v=ba9d4355:5472
+dispatchDiscreteEvent @ chunk-WERSD76P.js?v=ba9d4355:5449
+eruda.js:2  Geocoding error: TypeError: Failed to fetch
+    at window.fetch (eruda.js:2:218642)
+    at Object.apply (injected.js:253:39)
+    at handleSearchSubmit (search-sidebar.tsx:44:32)
+    at HTMLUnknownElement.callCallback2 (chunk-WERSD76P.js?v=ba9d4355:3674:22)
+    at Object.invokeGuardedCallbackDev (chunk-WERSD76P.js?v=ba9d4355:3699:24)
+    at invokeGuardedCallback (chunk-WERSD76P.js?v=ba9d4355:3733:39)
+    at invokeGuardedCallbackAndCatchFirstError (chunk-WERSD76P.js?v=ba9d4355:3736:33)
+    at executeDispatch (chunk-WERSD76P.js?v=ba9d4355:7014:11)
+    at processDispatchQueueItemsInOrder (chunk-WERSD76P.js?v=ba9d4355:7034:15)
+    at processDispatchQueue (chunk-WERSD76P.js?v=ba9d4355:7043:13)
+Mt.forEach.n.<computed> @ eruda.js:2
+handleSearchSubmit @ search-sidebar.tsx:56
+await in handleSearchSubmit
+callCallback2 @ chunk-WERSD76P.js?v=ba9d4355:3674
+invokeGuardedCallbackDev @ chunk-WERSD76P.js?v=ba9d4355:3699
+invokeGuardedCallback @ chunk-WERSD76P.js?v=ba9d4355:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-WERSD76P.js?v=ba9d4355:3736
+executeDispatch @ chunk-WERSD76P.js?v=ba9d4355:7014
+processDispatchQueueItemsInOrder @ chunk-WERSD76P.js?v=ba9d4355:7034
+processDispatchQueue @ chunk-WERSD76P.js?v=ba9d4355:7043
+dispatchEventsForPlugins @ chunk-WERSD76P.js?v=ba9d4355:7051
+(anonymous) @ chunk-WERSD76P.js?v=ba9d4355:7174
+batchedUpdates$1 @ chunk-WERSD76P.js?v=ba9d4355:18913
+batchedUpdates @ chunk-WERSD76P.js?v=ba9d4355:3579
+dispatchEventForPluginEventSystem @ chunk-WERSD76P.js?v=ba9d4355:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-WERSD76P.js?v=ba9d4355:5478
+dispatchEvent @ chunk-WERSD76P.js?v=ba9d4355:5472
+dispatchDiscreteEvent @ chunk-WERSD76P.js?v=ba9d4355:5449
+eruda.js:2    Uncaught (in promise) TypeError: Failed to fetch
+    at window.fetch (eruda.js:2:218642)
+    at Object.apply (injected.js:253:39)
+    at handleSearchSubmit (search-sidebar.tsx:44:32)
+    at HTMLUnknownElement.callCallback2 (chunk-WERSD76P.js?v=ba9d4355:3674:22)
+    at Object.invokeGuardedCallbackDev (chunk-WERSD76P.js?v=ba9d4355:3699:24)
+    at invokeGuardedCallback (chunk-WERSD76P.js?v=ba9d4355:3733:39)
+    at invokeGuardedCallbackAndCatchFirstError (chunk-WERSD76P.js?v=ba9d4355:3736:33)
+    at executeDispatch (chunk-WERSD76P.js?v=ba9d4355:7014:11)
+    at processDispatchQueueItemsInOrder (chunk-WERSD76P.js?v=ba9d4355:7034:15)
+    at processDispatchQueue (chunk-WERSD76P.js?v=ba9d4355:7043:13)
+window.fetch @ eruda.js:2
+apply @ injected.js:253
+handleSearchSubmit @ search-sidebar.tsx:44
+callCallback2 @ chunk-WERSD76P.js?v=ba9d4355:3674
+invokeGuardedCallbackDev @ chunk-WERSD76P.js?v=ba9d4355:3699
+invokeGuardedCallback @ chunk-WERSD76P.js?v=ba9d4355:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-WERSD76P.js?v=ba9d4355:3736
+executeDispatch @ chunk-WERSD76P.js?v=ba9d4355:7014
+processDispatchQueueItemsInOrder @ chunk-WERSD76P.js?v=ba9d4355:7034
+processDispatchQueue @ chunk-WERSD76P.js?v=ba9d4355:7043
+dispatchEventsForPlugins @ chunk-WERSD76P.js?v=ba9d4355:7051
+(anonymous) @ chunk-WERSD76P.js?v=ba9d4355:7174
+batchedUpdates$1 @ chunk-WERSD76P.js?v=ba9d4355:18913
+batchedUpdates @ chunk-WERSD76P.js?v=ba9d4355:3579
+dispatchEventForPluginEventSystem @ chunk-WERSD76P.js?v=ba9d4355:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-WERSD76P.js?v=ba9d4355:5478
+dispatchEvent @ chunk-WERSD76P.js?v=ba9d4355:5472
+dispatchDiscreteEvent @ chunk-WERSD76P.js?v=ba9d4355:5449
+(index):1  Access to fetch at 'https://api.openstreetmap.org/search?format=json&q=18017&limit=1' from origin 'https://6e64dbd7-3ada-43f7-bc13-0107afc6ffcf-00-2pqhvymtw0387.picard.replit.dev' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+(index):1  Access to fetch at 'https://api.openstreetmap.org/search?format=json&q=18017&limit=1' from origin 'https://6e64dbd7-3ada-43f7-bc13-0107afc6ffcf-00-2pqhvymtw0387.picard.replit.dev' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+eruda.js:2   GET https://api.openstreetmap.org/search?format=json&q=18017&limit=1 net::ERR_FAILED
+window.fetch @ eruda.js:2
+apply @ injected.js:253
+handleSearchSubmit @ search-sidebar.tsx:44
+callCallback2 @ chunk-WERSD76P.js?v=ba9d4355:3674
+invokeGuardedCallbackDev @ chunk-WERSD76P.js?v=ba9d4355:3699
+invokeGuardedCallback @ chunk-WERSD76P.js?v=ba9d4355:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-WERSD76P.js?v=ba9d4355:3736
+executeDispatch @ chunk-WERSD76P.js?v=ba9d4355:7014
+processDispatchQueueItemsInOrder @ chunk-WERSD76P.js?v=ba9d4355:7034
+processDispatchQueue @ chunk-WERSD76P.js?v=ba9d4355:7043
+dispatchEventsForPlugins @ chunk-WERSD76P.js?v=ba9d4355:7051
+(anonymous) @ chunk-WERSD76P.js?v=ba9d4355:7174
+batchedUpdates$1 @ chunk-WERSD76P.js?v=ba9d4355:18913
+batchedUpdates @ chunk-WERSD76P.js?v=ba9d4355:3579
+dispatchEventForPluginEventSystem @ chunk-WERSD76P.js?v=ba9d4355:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-WERSD76P.js?v=ba9d4355:5478
+dispatchEvent @ chunk-WERSD76P.js?v=ba9d4355:5472
+dispatchDiscreteEvent @ chunk-WERSD76P.js?v=ba9d4355:5449
+eruda.js:2   GET https://api.openstreetmap.org/search?format=json&q=18017&limit=1 net::ERR_FAILED
+window.fetch @ eruda.js:2
+apply @ injected.js:253
+handleSearchSubmit @ search-sidebar.tsx:44
+callCallback2 @ chunk-WERSD76P.js?v=ba9d4355:3674
+invokeGuardedCallbackDev @ chunk-WERSD76P.js?v=ba9d4355:3699
+invokeGuardedCallback @ chunk-WERSD76P.js?v=ba9d4355:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-WERSD76P.js?v=ba9d4355:3736
+executeDispatch @ chunk-WERSD76P.js?v=ba9d4355:7014
+processDispatchQueueItemsInOrder @ chunk-WERSD76P.js?v=ba9d4355:7034
+processDispatchQueue @ chunk-WERSD76P.js?v=ba9d4355:7043
+dispatchEventsForPlugins @ chunk-WERSD76P.js?v=ba9d4355:7051
+(anonymous) @ chunk-WERSD76P.js?v=ba9d4355:7174
+batchedUpdates$1 @ chunk-WERSD76P.js?v=ba9d4355:18913
+batchedUpdates @ chunk-WERSD76P.js?v=ba9d4355:3579
+dispatchEventForPluginEventSystem @ chunk-WERSD76P.js?v=ba9d4355:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-WERSD76P.js?v=ba9d4355:5478
+dispatchEvent @ chunk-WERSD76P.js?v=ba9d4355:5472
+dispatchDiscreteEvent @ chunk-WERSD76P.js?v=ba9d4355:5449
+eruda.js:2  Geocoding error: TypeError: Failed to fetch
+    at window.fetch (eruda.js:2:218642)
+    at Object.apply (injected.js:253:39)
+    at handleSearchSubmit (search-sidebar.tsx:44:32)
+    at HTMLUnknownElement.callCallback2 (chunk-WERSD76P.js?v=ba9d4355:3674:22)
+    at Object.invokeGuardedCallbackDev (chunk-WERSD76P.js?v=ba9d4355:3699:24)
+    at invokeGuardedCallback (chunk-WERSD76P.js?v=ba9d4355:3733:39)
+    at invokeGuardedCallbackAndCatchFirstError (chunk-WERSD76P.js?v=ba9d4355:3736:33)
+    at executeDispatch (chunk-WERSD76P.js?v=ba9d4355:7014:11)
+    at processDispatchQueueItemsInOrder (chunk-WERSD76P.js?v=ba9d4355:7034:15)
+    at processDispatchQueue (chunk-WERSD76P.js?v=ba9d4355:7043:13)
+Mt.forEach.n.<computed> @ eruda.js:2
+handleSearchSubmit @ search-sidebar.tsx:56
+await in handleSearchSubmit
+callCallback2 @ chunk-WERSD76P.js?v=ba9d4355:3674
+invokeGuardedCallbackDev @ chunk-WERSD76P.js?v=ba9d4355:3699
+invokeGuardedCallback @ chunk-WERSD76P.js?v=ba9d4355:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-WERSD76P.js?v=ba9d4355:3736
+executeDispatch @ chunk-WERSD76P.js?v=ba9d4355:7014
+processDispatchQueueItemsInOrder @ chunk-WERSD76P.js?v=ba9d4355:7034
+processDispatchQueue @ chunk-WERSD76P.js?v=ba9d4355:7043
+dispatchEventsForPlugins @ chunk-WERSD76P.js?v=ba9d4355:7051
+(anonymous) @ chunk-WERSD76P.js?v=ba9d4355:7174
+batchedUpdates$1 @ chunk-WERSD76P.js?v=ba9d4355:18913
+batchedUpdates @ chunk-WERSD76P.js?v=ba9d4355:3579
+dispatchEventForPluginEventSystem @ chunk-WERSD76P.js?v=ba9d4355:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-WERSD76P.js?v=ba9d4355:5478
+dispatchEvent @ chunk-WERSD76P.js?v=ba9d4355:5472
+dispatchDiscreteEvent @ chunk-WERSD76P.js?v=ba9d4355:5449
+eruda.js:2    Uncaught (in promise) TypeError: Failed to fetch
+    at window.fetch (eruda.js:2:218642)
+    at Object.apply (injected.js:253:39)
+    at handleSearchSubmit (search-sidebar.tsx:44:32)
+    at HTMLUnknownElement.callCallback2 (chunk-WERSD76P.js?v=ba9d4355:3674:22)
+    at Object.invokeGuardedCallbackDev (chunk-WERSD76P.js?v=ba9d4355:3699:24)
+    at invokeGuardedCallback (chunk-WERSD76P.js?v=ba9d4355:3733:39)
+    at invokeGuardedCallbackAndCatchFirstError (chunk-WERSD76P.js?v=ba9d4355:3736:33)
+    at executeDispatch (chunk-WERSD76P.js?v=ba9d4355:7014:11)
+    at processDispatchQueueItemsInOrder (chunk-WERSD76P.js?v=ba9d4355:7034:15)
+    at processDispatchQueue (chunk-WERSD76P.js?v=ba9d4355:7043:13)
+window.fetch @ eruda.js:2
+apply @ injected.js:253
+handleSearchSubmit @ search-sidebar.tsx:44
+callCallback2 @ chunk-WERSD76P.js?v=ba9d4355:3674
+invokeGuardedCallbackDev @ chunk-WERSD76P.js?v=ba9d4355:3699
+invokeGuardedCallback @ chunk-WERSD76P.js?v=ba9d4355:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-WERSD76P.js?v=ba9d4355:3736
+executeDispatch @ chunk-WERSD76P.js?v=ba9d4355:7014
+processDispatchQueueItemsInOrder @ chunk-WERSD76P.js?v=ba9d4355:7034
+processDispatchQueue @ chunk-WERSD76P.js?v=ba9d4355:7043
+dispatchEventsForPlugins @ chunk-WERSD76P.js?v=ba9d4355:7051
+(anonymous) @ chunk-WERSD76P.js?v=ba9d4355:7174
+batchedUpdates$1 @ chunk-WERSD76P.js?v=ba9d4355:18913
+batchedUpdates @ chunk-WERSD76P.js?v=ba9d4355:3579
+dispatchEventForPluginEventSystem @ chunk-WERSD76P.js?v=ba9d4355:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-WERSD76P.js?v=ba9d4355:5478
+dispatchEvent @ chunk-WERSD76P.js?v=ba9d4355:5472
+dispatchDiscreteEvent @ chunk-WERSD76P.js?v=ba9d4355:5449
+(index):1  Access to fetch at 'https://api.openstreetmap.org/search?format=json&q=1337%20e%205th%20st%2C%20bethlehem%2C%20pa&limit=1' from origin 'https://6e64dbd7-3ada-43f7-bc13-0107afc6ffcf-00-2pqhvymtw0387.picard.replit.dev' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+(index):1  Access to fetch at 'https://api.openstreetmap.org/search?format=json&q=1337%20e%205th%20st%2C%20bethlehem%2C%20pa&limit=1' from origin 'https://6e64dbd7-3ada-43f7-bc13-0107afc6ffcf-00-2pqhvymtw0387.picard.replit.dev' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+eruda.js:2   GET https://api.openstreetmap.org/search?format=json&q=1337%20e%205th%20st%2C%20bethlehem%2C%20pa&limit=1 net::ERR_FAILED 301 (Moved Permanently)
+window.fetch @ eruda.js:2
+apply @ injected.js:253
+handleSearchSubmit @ search-sidebar.tsx:44
+callCallback2 @ chunk-WERSD76P.js?v=ba9d4355:3674
+invokeGuardedCallbackDev @ chunk-WERSD76P.js?v=ba9d4355:3699
+invokeGuardedCallback @ chunk-WERSD76P.js?v=ba9d4355:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-WERSD76P.js?v=ba9d4355:3736
+executeDispatch @ chunk-WERSD76P.js?v=ba9d4355:7014
+processDispatchQueueItemsInOrder @ chunk-WERSD76P.js?v=ba9d4355:7034
+processDispatchQueue @ chunk-WERSD76P.js?v=ba9d4355:7043
+dispatchEventsForPlugins @ chunk-WERSD76P.js?v=ba9d4355:7051
+(anonymous) @ chunk-WERSD76P.js?v=ba9d4355:7174
+batchedUpdates$1 @ chunk-WERSD76P.js?v=ba9d4355:18913
+batchedUpdates @ chunk-WERSD76P.js?v=ba9d4355:3579
+dispatchEventForPluginEventSystem @ chunk-WERSD76P.js?v=ba9d4355:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-WERSD76P.js?v=ba9d4355:5478
+dispatchEvent @ chunk-WERSD76P.js?v=ba9d4355:5472
+dispatchDiscreteEvent @ chunk-WERSD76P.js?v=ba9d4355:5449
+eruda.js:2   GET https://api.openstreetmap.org/search?format=json&q=1337%20e%205th%20st%2C%20bethlehem%2C%20pa&limit=1 net::ERR_FAILED 301 (Moved Permanently)
+window.fetch @ eruda.js:2
+apply @ injected.js:253
+handleSearchSubmit @ search-sidebar.tsx:44
+callCallback2 @ chunk-WERSD76P.js?v=ba9d4355:3674
+invokeGuardedCallbackDev @ chunk-WERSD76P.js?v=ba9d4355:3699
+invokeGuardedCallback @ chunk-WERSD76P.js?v=ba9d4355:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-WERSD76P.js?v=ba9d4355:3736
+executeDispatch @ chunk-WERSD76P.js?v=ba9d4355:7014
+processDispatchQueueItemsInOrder @ chunk-WERSD76P.js?v=ba9d4355:7034
+processDispatchQueue @ chunk-WERSD76P.js?v=ba9d4355:7043
+dispatchEventsForPlugins @ chunk-WERSD76P.js?v=ba9d4355:7051
+(anonymous) @ chunk-WERSD76P.js?v=ba9d4355:7174
+batchedUpdates$1 @ chunk-WERSD76P.js?v=ba9d4355:18913
+batchedUpdates @ chunk-WERSD76P.js?v=ba9d4355:3579
+dispatchEventForPluginEventSystem @ chunk-WERSD76P.js?v=ba9d4355:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-WERSD76P.js?v=ba9d4355:5478
+dispatchEvent @ chunk-WERSD76P.js?v=ba9d4355:5472
+dispatchDiscreteEvent @ chunk-WERSD76P.js?v=ba9d4355:5449
+eruda.js:2  Geocoding error: TypeError: Failed to fetch
+    at window.fetch (eruda.js:2:218642)
+    at Object.apply (injected.js:253:39)
+    at handleSearchSubmit (search-sidebar.tsx:44:32)
+    at HTMLUnknownElement.callCallback2 (chunk-WERSD76P.js?v=ba9d4355:3674:22)
+    at Object.invokeGuardedCallbackDev (chunk-WERSD76P.js?v=ba9d4355:3699:24)
+    at invokeGuardedCallback (chunk-WERSD76P.js?v=ba9d4355:3733:39)
+    at invokeGuardedCallbackAndCatchFirstError (chunk-WERSD76P.js?v=ba9d4355:3736:33)
+    at executeDispatch (chunk-WERSD76P.js?v=ba9d4355:7014:11)
+    at processDispatchQueueItemsInOrder (chunk-WERSD76P.js?v=ba9d4355:7034:15)
+    at processDispatchQueue (chunk-WERSD76P.js?v=ba9d4355:7043:13)
+Mt.forEach.n.<computed> @ eruda.js:2
+handleSearchSubmit @ search-sidebar.tsx:56
+await in handleSearchSubmit
+callCallback2 @ chunk-WERSD76P.js?v=ba9d4355:3674
+invokeGuardedCallbackDev @ chunk-WERSD76P.js?v=ba9d4355:3699
+invokeGuardedCallback @ chunk-WERSD76P.js?v=ba9d4355:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-WERSD76P.js?v=ba9d4355:3736
+executeDispatch @ chunk-WERSD76P.js?v=ba9d4355:7014
+processDispatchQueueItemsInOrder @ chunk-WERSD76P.js?v=ba9d4355:7034
+processDispatchQueue @ chunk-WERSD76P.js?v=ba9d4355:7043
+dispatchEventsForPlugins @ chunk-WERSD76P.js?v=ba9d4355:7051
+(anonymous) @ chunk-WERSD76P.js?v=ba9d4355:7174
+batchedUpdates$1 @ chunk-WERSD76P.js?v=ba9d4355:18913
+batchedUpdates @ chunk-WERSD76P.js?v=ba9d4355:3579
+dispatchEventForPluginEventSystem @ chunk-WERSD76P.js?v=ba9d4355:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-WERSD76P.js?v=ba9d4355:5478
+dispatchEvent @ chunk-WERSD76P.js?v=ba9d4355:5472
+dispatchDiscreteEvent @ chunk-WERSD76P.js?v=ba9d4355:5449
+eruda.js:2    Uncaught (in promise) TypeError: Failed to fetch
+    at window.fetch (eruda.js:2:218642)
+    at Object.apply (injected.js:253:39)
+    at handleSearchSubmit (search-sidebar.tsx:44:32)
+    at HTMLUnknownElement.callCallback2 (chunk-WERSD76P.js?v=ba9d4355:3674:22)
+    at Object.invokeGuardedCallbackDev (chunk-WERSD76P.js?v=ba9d4355:3699:24)
+    at invokeGuardedCallback (chunk-WERSD76P.js?v=ba9d4355:3733:39)
+    at invokeGuardedCallbackAndCatchFirstError (chunk-WERSD76P.js?v=ba9d4355:3736:33)
+    at executeDispatch (chunk-WERSD76P.js?v=ba9d4355:7014:11)
+    at processDispatchQueueItemsInOrder (chunk-WERSD76P.js?v=ba9d4355:7034:15)
+    at processDispatchQueue (chunk-WERSD76P.js?v=ba9d4355:7043:13)
+window.fetch @ eruda.js:2
+apply @ injected.js:253
+handleSearchSubmit @ search-sidebar.tsx:44
+callCallback2 @ chunk-WERSD76P.js?v=ba9d4355:3674
+invokeGuardedCallbackDev @ chunk-WERSD76P.js?v=ba9d4355:3699
+invokeGuardedCallback @ chunk-WERSD76P.js?v=ba9d4355:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-WERSD76P.js?v=ba9d4355:3736
+executeDispatch @ chunk-WERSD76P.js?v=ba9d4355:7014
+processDispatchQueueItemsInOrder @ chunk-WERSD76P.js?v=ba9d4355:7034
+processDispatchQueue @ chunk-WERSD76P.js?v=ba9d4355:7043
+dispatchEventsForPlugins @ chunk-WERSD76P.js?v=ba9d4355:7051
+(anonymous) @ chunk-WERSD76P.js?v=ba9d4355:7174
+batchedUpdates$1 @ chunk-WERSD76P.js?v=ba9d4355:18913
+batchedUpdates @ chunk-WERSD76P.js?v=ba9d4355:3579
+dispatchEventForPluginEventSystem @ chunk-WERSD76P.js?v=ba9d4355:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-WERSD76P.js?v=ba9d4355:5478
+dispatchEvent @ chunk-WERSD76P.js?v=ba9d4355:5472
+dispatchDiscreteEvent @ chunk-WERSD76P.js?v=ba9d4355:5449
+eruda.js:2  Geocoding error: SyntaxError: Failed to execute 'json' on 'Response': Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+    at handleSearchSubmit (search-sidebar.tsx?t=1757040067372:46:42)
+Mt.forEach.n.<computed> @ eruda.js:2
+handleSearchSubmit @ search-sidebar.tsx?t=1757040067372:58
+await in handleSearchSubmit
+callCallback2 @ chunk-WERSD76P.js?v=ba9d4355:3674
+invokeGuardedCallbackDev @ chunk-WERSD76P.js?v=ba9d4355:3699
+invokeGuardedCallback @ chunk-WERSD76P.js?v=ba9d4355:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-WERSD76P.js?v=ba9d4355:3736
+executeDispatch @ chunk-WERSD76P.js?v=ba9d4355:7014
+processDispatchQueueItemsInOrder @ chunk-WERSD76P.js?v=ba9d4355:7034
+processDispatchQueue @ chunk-WERSD76P.js?v=ba9d4355:7043
+dispatchEventsForPlugins @ chunk-WERSD76P.js?v=ba9d4355:7051
+(anonymous) @ chunk-WERSD76P.js?v=ba9d4355:7174
+batchedUpdates$1 @ chunk-WERSD76P.js?v=ba9d4355:18913
+batchedUpdates @ chunk-WERSD76P.js?v=ba9d4355:3579
+dispatchEventForPluginEventSystem @ chunk-WERSD76P.js?v=ba9d4355:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-WERSD76P.js?v=ba9d4355:5478
+dispatchEvent @ chunk-WERSD76P.js?v=ba9d4355:5472
+dispatchDiscreteEvent @ chunk-WERSD76P.js?v=ba9d4355:5449
+eruda.js:2  Geocoding error: SyntaxError: Failed to execute 'json' on 'Response': Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+    at handleSearchSubmit (search-sidebar.tsx?t=1757040067372:46:42)
+Mt.forEach.n.<computed> @ eruda.js:2
+handleSearchSubmit @ search-sidebar.tsx?t=1757040067372:58
+await in handleSearchSubmit
+callCallback2 @ chunk-WERSD76P.js?v=ba9d4355:3674
+invokeGuardedCallbackDev @ chunk-WERSD76P.js?v=ba9d4355:3699
+invokeGuardedCallback @ chunk-WERSD76P.js?v=ba9d4355:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-WERSD76P.js?v=ba9d4355:3736
+executeDispatch @ chunk-WERSD76P.js?v=ba9d4355:7014
+processDispatchQueueItemsInOrder @ chunk-WERSD76P.js?v=ba9d4355:7034
+processDispatchQueue @ chunk-WERSD76P.js?v=ba9d4355:7043
+dispatchEventsForPlugins @ chunk-WERSD76P.js?v=ba9d4355:7051
+(anonymous) @ chunk-WERSD76P.js?v=ba9d4355:7174
+batchedUpdates$1 @ chunk-WERSD76P.js?v=ba9d4355:18913
+batchedUpdates @ chunk-WERSD76P.js?v=ba9d4355:3579
+dispatchEventForPluginEventSystem @ chunk-WERSD76P.js?v=ba9d4355:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-WERSD76P.js?v=ba9d4355:5478
+dispatchEvent @ chunk-WERSD76P.js?v=ba9d4355:5472
+dispatchDiscreteEvent @ chunk-WERSD76P.js?v=ba9d4355:5449
+eruda.js:2  Geocoding error: SyntaxError: Failed to execute 'json' on 'Response': Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+    at handleSearchSubmit (search-sidebar.tsx?t=1757040067372:46:42)
+Mt.forEach.n.<computed> @ Console.js:61
+handleSearchSubmit @ search-sidebar.tsx?t=1757040067372:58
+await in handleSearchSubmit
+callCallback2 @ react-dom.development.js:4164
+invokeGuardedCallbackDev @ react-dom.development.js:4213
+invokeGuardedCallback @ react-dom.development.js:4277
+invokeGuardedCallbackAndCatchFirstError @ react-dom.development.js:4291
+executeDispatch @ react-dom.development.js:9041
+processDispatchQueueItemsInOrder @ react-dom.development.js:9073
+processDispatchQueue @ react-dom.development.js:9086
+dispatchEventsForPlugins @ react-dom.development.js:9097
+(anonymous) @ react-dom.development.js:9288
+batchedUpdates$1 @ react-dom.development.js:26179
+batchedUpdates @ react-dom.development.js:3991
+dispatchEventForPluginEventSystem @ react-dom.development.js:9287
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ react-dom.development.js:6465
+dispatchEvent @ react-dom.development.js:6457
+dispatchDiscreteEvent @ react-dom.development.js:6430
+eruda.js:2 [vite] server connection lost. Polling for restart...
+eruda.js:2 [vite] server connection lost. Polling for restart...
+eruda.js:2 [vite] server connection lost. Polling for restart...
